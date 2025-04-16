@@ -1,0 +1,127 @@
+.side-nav-container{
+    width: 100%;
+    max-width: 280px;
+    height: 994px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px 0px 16px;
+    /* justify-content: space-between; */
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.02); 
+    backdrop-filter: blur(30px);
+    /* position: relative; */
+}
+.first-circle-shadow{
+    position: absolute;
+    width: 313px;
+    height: 313px;
+    top: 0;
+    left: -1px;
+    border-radius: 50%;
+    background: linear-gradient(92.24deg, #1201FF 0%, #C597FD 120.64%);
+    filter: blur(100px);
+    opacity: 0.4;
+}
+.side-nav-logo{
+    width: 193.5px;
+    padding: 30px 0px 60px 30px
+}
+.side-nav-menu{
+    width: 100%;
+    padding: 0px 24px 592px 24px;
+}
+.side-nav-menu ul{
+    width: 100%;
+    height: 196px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style: none;
+    /* gap: 12px; */
+    padding: 0;
+    /* margin: 0; */
+}
+.side-nav-menu ul li a{
+    display: flex;
+    gap: 12px;
+    text-decoration: none;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+}
+
+.side-nav-logout-d{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px 23px 30px 24px;
+}
+.line-div {
+    width: 100%;
+    height: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+}
+.side-nav-logout-d a {
+    display: flex;
+    gap:12px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    color: rgba(255, 0, 0, 1);
+    margin: 0;
+}
+/* Hamburger Button */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    /* z-index: 1001; */
+  }
+  
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  /* Mobile Sidebar Behavior */
+  @media (max-width: 1300px) {
+    .side-nav-container {
+      position: fixed;
+      left: -280px;
+      top: 0;
+      height: 100vh;
+      transition: left 0.3s ease;
+      z-index: 1000;
+      display: block;
+    }
+  
+    .side-nav-container.open {
+      left: 0;
+    }
+  
+    .hamburger {
+      display: flex;
+      margin: 20px 20px 0px 20px;
+    }
+    .side-nav-menu{
+      width: 100%;
+      padding: 0px 24px 130px 24px;
+  }
+  }
+  
