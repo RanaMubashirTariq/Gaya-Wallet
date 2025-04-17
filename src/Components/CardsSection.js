@@ -2,44 +2,22 @@ import React from 'react'
 import './CardsSection.css';
 import {
     Box,
-    Table,
-    TableBody,
-    TableCell,
-    TableContainer,
-    TableHead,
-    TableRow,
-    TableFooter,
-    Paper,
     TextField,
     Button,
+    Table,
     Typography,
     IconButton,
     Tooltip,
   } from "@mui/material";
   import SearchIcon from "@mui/icons-material/Search";
   import FilterAltIcon from "@mui/icons-material/FilterAlt";
-  import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+  import HeaderTable from './HeaderTable';
+import BodyTable from './BodyTable';
+import FooterTable from './FooterTable';
+
 
 
 export default function CardsSection() {
-
-    const users = Array.from({ length: 10 }, (_, i) => ({
-        id: i + 1,
-        name: "George",
-        email: "loremipsum@gmail.com",
-        wallet: "1Fnb....N455pPdH",
-        insured: i === 2 ? "$1,000,000" : i === 1 ? "$100,000" : "$15,000",
-        subscription: i % 2 === 0 ? "Monthly" : "Yearly",
-        insuranceFee: i === 2 ? "$1,000,000" : i === 1 ? "$90,000" : "$15,000",
-      }));
-        
-
-
-        const handleCopy = (text) => {
-          navigator.clipboard.writeText(text);
-        };
-
-
   return (
 
        <div className='Data-main-div'>
@@ -108,6 +86,7 @@ export default function CardsSection() {
 
 
          <div>
+
          <Box className='table-main-container'>
       {/* Header Row */}
       <Box className='table-upper-div'>
@@ -145,75 +124,13 @@ export default function CardsSection() {
           Filter
         </Button>
       </Box>
-
-      {/* Table Header */}
-      <Box sx={{ mb: 2 }} className='table-scroll-wrapper'>
-        <TableContainer component={Paper} sx={{ backgroundColor: "#1A1A2E" }}>
-          <Table>
-          <TableHead>
-                <TableRow >
-                    <TableCell sx={{ color:' rgba(143, 162, 183, 1)', fontWeight: "400px", fontSize:'14px',  fontFamily:'Poppins' , width: "60px" , p:'10px' }}>#</TableCell>
-                    <TableCell sx={{ color:' rgba(143, 162, 183, 1)', fontWeight: "400px", fontSize:'14px',  fontFamily:'Poppins' , minWidth: "120px" , p:'10px'}}>Name</TableCell>
-                    <TableCell sx={{ color:' rgba(143, 162, 183, 1)', fontWeight: "400px", fontSize:'14px',  fontFamily:'Poppins' , minWidth: "220px" , p:'10px'}}>Email</TableCell>
-                    <TableCell sx={{ color:' rgba(143, 162, 183, 1)', fontWeight: "400px", fontSize:'14px',  fontFamily:'Poppins' , minWidth: "210px" , p:'10px'}}>Wallet Address</TableCell>
-                    <TableCell sx={{ color:' rgba(143, 162, 183, 1)', fontWeight: "400px", fontSize:'14px',  fontFamily:'Poppins' , minWidth: "120px" , p:'10px', whiteSpace: "nowrap" }}>Insured Amount</TableCell>
-                    <TableCell sx={{ color:' rgba(143, 162, 183, 1)', fontWeight: "400px", fontSize:'14px',  fontFamily:'Poppins' , minWidth: "100px" , p:'10px'}}>Subscription</TableCell>
-                    <TableCell sx={{ color:' rgba(143, 162, 183, 1)', fontWeight: "400px", fontSize:'14px',  fontFamily:'Poppins' , minWidth: "120px" , p:'10px', whiteSpace: "nowrap"}}>Insurance Fee</TableCell>
-                </TableRow>
-                </TableHead>
-          </Table>
-        </TableContainer>
-      </Box>
-
-      {/* Table Body */}
-      <Box sx={{ mb: 2 }}>
-        <TableContainer component={Paper} sx={{ backgroundColor: 'transparent', }}>
-          <Table>
-            <TableBody>
-              {users.map((user) => (
-                <TableRow key={user.id} hover>
-                  <TableCell sx={{ color: "#fff" , fontWeight: "400px", fontSize:'14px',  fontFamily:'Poppins' , width: "60px"  }}>{user.id}</TableCell>
-                  <TableCell sx={{ color: "#fff" , fontWeight: "400px", fontSize:'14px',  fontFamily:'Poppins' , minWidth: "100px" }}>{user.name}</TableCell>
-                  <TableCell sx={{ color: "#fff" , fontWeight: "400px", fontSize:'14px',  fontFamily:'Poppins' , p:'0px' , overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',  maxWidth: '180px', }}>{user.email}</TableCell>
-
-                  <TableCell sx={{  color: "#fff" , fontWeight: "400px", fontSize:'14px',  fontFamily:'Poppins' , p:'0px' , overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',  maxWidth: '180px',  }}>
-                            <Box sx={{ display: "flex", alignItems: "center" }}>
-                                {user.wallet}
-                                <Tooltip title="Copy Wallet">
-                                <IconButton
-                                    size="small"
-                                    onClick={() => handleCopy(user.wallet)}
-                                    sx={{ ml: 1, color: "#888" }}
-                                >
-                                    <ContentCopyIcon fontSize="small" />
-                                </IconButton>
-                                </Tooltip>
-                            </Box>
-                    </TableCell>
-
-                  <TableCell sx={{ color: "#fff" , fontWeight: "400px", fontSize:'14px',  fontFamily:'Poppins' ,  }}>{user.insured}</TableCell>
-                  <TableCell sx={{ color: "#fff" , fontWeight: "400px", fontSize:'14px',  fontFamily:'Poppins' , }}>{user.subscription}</TableCell>
-                  <TableCell sx={{ color: "#fff" , fontWeight: "400px", fontSize:'14px',  fontFamily:'Poppins' , }}>{user.insuranceFee}</TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
-      </Box>
-
-      {/* Table Footer */}
-      <Box>
-      <Table>
-          <TableFooter>
-                <TableRow sx={{ backgroundColor: 'transparent', borderRadius:'7.6px' , border: '1px solid rgba(255, 255, 255, 0.02)' }}>
-                    <TableCell colSpan={4} /> 
-                    <TableCell sx={{ color: "#fff", textAlign:'right', fontWeight: "400px", fontSize:'14px',  fontFamily:'Poppins' ,  }}>$35,000</TableCell>
-                    <TableCell sx={{width : '165px'}} />
-                    <TableCell sx={{ color: "#fff", fontWeight: "400px", fontSize:'14px',  fontFamily:'Poppins'  , textAlign:'left' , width:'125px'}}>$35,000</TableCell>
-                </TableRow>
-                </TableFooter>
-          </Table>
-      </Box>
+      <Box sx={{ overflowX: "auto",width:'100%' }}>
+            <Box  sx={{ minWidth: 1060, tableLayout: 'fixed' }}>
+            <HeaderTable/>
+             <BodyTable/>
+             <FooterTable/>
+            </Box>
+    </Box>
     </Box>
          </div>
 
