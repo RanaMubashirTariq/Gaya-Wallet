@@ -11,9 +11,7 @@ import {
   } from "@mui/material";
   import SearchIcon from "@mui/icons-material/Search";
   import FilterAltIcon from "@mui/icons-material/FilterAlt";
-  import HeaderTable from './HeaderTable';
-import BodyTable from './BodyTable';
-import FooterTable from './FooterTable';
+import TabelSection from './CompleteTableSection/TableSection'
 
 
 
@@ -124,13 +122,7 @@ export default function CardsSection() {
           Filter
         </Button>
       </Box>
-      <Box sx={{ overflowX: "auto",width:'100%' }}>
-            <Box  sx={{ minWidth: 1060, tableLayout: 'fixed' }}>
-            <HeaderTable/>
-             <BodyTable/>
-             <FooterTable/>
-            </Box>
-    </Box>
+          <TabelSection/>
     </Box>
          </div>
 

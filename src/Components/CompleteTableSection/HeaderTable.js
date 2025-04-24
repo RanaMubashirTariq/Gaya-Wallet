@@ -27,7 +27,7 @@ export default function HeaderTable() {
     <TableContainer
     component={Paper}
     sx={{
-      backgroundColor: '#000033',
+      backgroundColor: '#000000',
       borderRadius: "7.66px",
       marginBottom: "16px",
       minWidth: "950px",
@@ -47,7 +47,7 @@ export default function HeaderTable() {
                 fontFamily: "Poppins",
                 border: "none",
                 whiteSpace: "nowrap",
-                backgroundColor: '#000033',
+                backgroundColor: '#000000',
                 '@media (max-width:1050px)': {
                   fontSize: '12px',
                 },

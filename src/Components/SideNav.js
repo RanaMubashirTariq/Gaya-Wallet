@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './SideNav.css';
+import { NavLink , Link} from 'react-router-dom';
 
 export default function SideNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,18 +30,15 @@ export default function SideNav() {
       </div>
 
       {/* Sidebar */}
-      <div
-        ref={sidebarRef}
-        className={`side-nav-container ${isOpen ? 'open' : ''}`}
-      >
+      <div  ref={sidebarRef}  className={`side-nav-container ${isOpen ? 'open' : ''}`} >
         <div className="first-circle-shadow"></div>
 
         <img src="/Pictures/GayaWallet-logo.svg" className="side-nav-logo" alt="Logo" />
 
         <div className="side-nav-menu">
           <ul>
-            <li><a href="#"><img src='/Pictures/Dashboard.svg'/>Dashboard</a></li>
-            <li><a href="#"><img src='/Pictures/Insured.svg'/>Insured Users</a></li>
+            <li><Link to="/dashboard"><img src='/Pictures/Dashboard.svg'/>Dashboard</Link></li>
+            <li><Link to="/insured-users"><img src='/Pictures/Insured.svg'/>insuredUser</Link></li>
             <li><a href="#"><img src='/Pictures/UserTransaction.svg'/>User Transactions</a></li>
             <li><a href="#"><img src='/Pictures/Insurance.svg'/>Insurance Payments</a></li>
           </ul>
@@ -48,7 +46,7 @@ export default function SideNav() {
 
         <div className="side-nav-logout-d">
           <img src="Line.svg" className="line-div" alt="Line" />
-          <a href="#"><img src='/Pictures/Arrow-right.svg'/>Log Out</a>
+          <Link to="/"><img src='/Pictures/Arrow-right.svg'/>Log Out</Link>
         </div>
       </div>
     </>

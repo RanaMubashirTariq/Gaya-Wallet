@@ -1,0 +1,75 @@
+.main-container-d{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 430px;
+    padding-top: 150px;
+    position: relative;
+}
+.sb-main-container-d{
+    max-width: 284px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.User-pic-div{
+    width: 250px;
+    height: 250px;
+    background: url(/public/Pictures/NoUser.svg) ,  linear-gradient(91.26deg, #1201FF 0%, #C597FD 100%); 
+    background-blend-mode:hue;
+    background-size: cover;
+}
+.sb-main-container-d h2{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+}
+
+
+@media screen and (max-width:1300px) {
+    .main-container-d{
+        padding-left:0;
+        padding-top:0;
+        padding: 40px 500px; 
+    }
+}
+@media screen and (max-width:1050px) {
+    .main-container-d{
+        padding-left:0;
+        padding-top:0;
+        padding: 40px 350px; 
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .main-container-d{
+        padding-left:0;
+        padding-top:0;
+        padding: 40px 250px; 
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .main-container-d{
+        padding-left:0;
+        padding-top:0;
+        padding: 40px 25px 40px 80px; 
+    }
+}
+@media screen and (max-width:375px) {
+    .main-container-d{
+        padding-left:0;
+        padding-top:0;
+        padding: 40px 25px 40px 50px; 
+    }
+}

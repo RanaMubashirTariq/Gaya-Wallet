@@ -1,7 +1,13 @@
 import React , {useState} from 'react'
 import './SignInSection.css'
+import { Link , useNavigate  } from 'react-router-dom';
 
 export default function SignInSection() {
+  const navigate = useNavigate();
+
+  const handleNavigate = () =>{
+    navigate('/dashboard');
+  }
 
     const [showPassword , setShowPassword] = useState(false);
 
@@ -34,7 +40,7 @@ export default function SignInSection() {
                          </div>
                   </div>
                    
-                <button className='sign-in-btn'>Sign In</button>
+                <button className='sign-in-btn' onClick={handleNavigate}><Link>Sign In</Link></button>
 
             </div>
             </div>

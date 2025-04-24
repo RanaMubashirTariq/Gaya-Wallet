@@ -22,13 +22,15 @@
     background: linear-gradient(92.24deg, #1201FF 0%, #C597FD 120.64%);
     filter: blur(100px);
     opacity: 0.4;
+    z-index: 10001px;
 }
 .side-nav-logo{
     width: 193.5px;
-    padding: 30px 0px 60px 30px
+    padding: 30px 56px 60px 30px;
 }
 .side-nav-menu{
     width: 100%;
+    /* max-width: 232px; */
     padding: 0px 24px 592px 24px;
 }
 .side-nav-menu ul{
@@ -39,11 +41,10 @@
     align-items: flex-start;
     justify-content: space-between;
     list-style: none;
-    /* gap: 12px; */
     padding: 0;
-    /* margin: 0; */
 }
 .side-nav-menu ul li a{
+  width: 100%;
     display: flex;
     gap: 12px;
     text-decoration: none;
@@ -52,8 +53,13 @@
     font-size: 14px;
     line-height: 160%;
     letter-spacing: 0px;
-    color: rgba(255, 255, 255, 1);
+    color: rgb(252, 251, 251);
     margin: 0;
+    cursor: pointer;
+}
+.active-link {
+  color: #f7f6f9;
+  font-weight: 600;
 }
 
 .side-nav-logout-d{
@@ -89,7 +95,7 @@
     position: fixed;
     top: 20px;
     left: 20px;
-    /* z-index: 1001; */
+
   }
   
   .hamburger .bar {

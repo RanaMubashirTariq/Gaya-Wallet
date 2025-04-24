@@ -1,0 +1,141 @@
+rdo.main-popup-contianer{
+  width: 100%;
+  overflow-y: scroll;
+}
+.popup-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    width: 100%;
+    max-width:459px;
+    height: 441px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    overflow-y:visible;
+  }
+  
+  .popup-container {
+    background-color: #0e0e1a;
+    border-radius: 14px;
+    color: white;
+    font-family: Poppins;
+  }
+  
+  .popup-section {
+    margin-bottom: 20px;
+  }
+  
+  .section-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .reset-button {
+    color: #9c6eff;
+    background: linear-gradient(91.26deg, #1201FF 0%, #C597FD 100%);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .subscription-options {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .subscription-button {
+    flex: 1;
+    padding: 10px 0;
+    border-radius: 10px;
+    background-color: #1a1a28;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer;
+    color: rgba(143, 162, 183, 1);
+  }
+  
+  .subscription-button.active {
+    background: linear-gradient(91.26deg, #1201FF 0%, #C597FD 100%);
+    color: rgba(143, 162, 183, 1);
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .input-box {
+    flex: 1;
+    padding: 10px 12px;
+    background-color: #1a1a28;
+    border: none;
+    border-radius: 10px;
+    color: rgba(143, 162, 183, 1);
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .input-box::placeholder{
+    color: rgba(143, 162, 183, 1);
+  }
+  .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    margin-top: 15px;
+  }
+  
+  .reset-filter-btn,
+  .apply-filter-btn {
+    flex: 1;
+    padding: 12px 0;
+    border: none;
+    border-radius: 999px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .reset-filter-btn {
+    background-color: #1c1f26;
+    color: white;
+  }
+  
+  .apply-filter-btn {
+    background: linear-gradient(91.26deg, #1201FF 0%, #C597FD 100%);
+    color: white;
+  }
+  
+  /* Responsive font on small screens */
+  @media (max-width: 765px) {
+    .popup-container {
+      width: 90%;
+    }
+    .popup-section-title {
+      font-size: 12px;
+    }
+    .input-box,
+    .subscription-button {
+      font-size: 12px;
+    }
+    .action-buttons {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 15px;
+    }
+  }
+  
