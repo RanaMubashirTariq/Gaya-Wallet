@@ -117,6 +117,10 @@ rdo.main-popup-contianer{
     background: linear-gradient(91.26deg, #1201FF 0%, #C597FD 100%);
     color: white;
   }
+  .apply-filter-btn a{
+    text-decoration: none;
+    color: white;
+  }
   
   /* Responsive font on small screens */
   @media (max-width: 765px) {
