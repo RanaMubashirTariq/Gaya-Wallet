@@ -6,61 +6,31 @@ import InsuredUser from './Components/InsuredUser';
 import NoInsurance from './Components/NoInsurance';
 import './App.css';
 import UserTranactions from './Components/UserTransactions';
+import LayOut from './Components/LayOut'
+import CompleteSwapNumber from './Components/UserTransaction/CompleteSwapNumber'
+import UserTransaction2 from './Components/UserTransaction/UserTransaction2';
+import UserTransactionComplete from './Components/UserTransaction/UserTransactionComplete'
+import NoUserTransaction from './Components/UserTransaction/NoUserTransaction';
+
 
 function App() {
   return (
     <Router>
-      <Routes>
-        {/* Sign In Page */}
-        <Route path="/" element={<SignInSection />} />
-
-        {/* Dashboard Layout */}
-        <Route path="/dashboard" element={
-          <div className='main-1'>
-            <div className='second-circle-shadow'>
-              <img src="/Pictures/vector.svg" alt="background" />
-            </div>
-            <SideNav />
-            <MainDataSection />
-          </div>
-        } />
-
-        {/* Insured Users */}
-        <Route path="/insured-users" element={
-           <div className='main-1'>
-                <div className='second-circle-shadow'>
-                  <img src="/Pictures/vector.svg" alt="background" />
-                </div>
-            <SideNav />
-            <InsuredUser />
-          </div>
-        } />
-                  <Route path="/no-insurance" element={
-           <div className='main-1'>
-                <div className='second-circle-shadow-3'>
-                  <img src="/Pictures/vector.svg" alt="background" />
-                </div>
-            <SideNav />
-            <NoInsurance/>
-          </div>
-        } />
-
-          
-          {/* Uner Transaction */}
-
-          <Route path="/userTransactions" element={
-           <div className='main-1'>
-                <div className='second-circle-shadow'>
-                  <img src="/Pictures/vector.svg" alt="background" />
-                </div>
-            <SideNav />
-            <UserTranactions/>
-          </div>
-        } />
-
-
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<SignInSection />} />
+  
+        <Route path="/dashboard" element={<LayOut />}>
+        <Route index element={<MainDataSection />} />
+        <Route path="insured-users" element={<InsuredUser />} />
+        {/* <Route path="user-transaction-2" element={<UserTransactionComplete/>} />   */}
+        <Route path="user-transaction-2" element={<NoUserTransaction/>} />  
+        {/* <Route path="user-transaction-2" element={<NoInsurance />} />   */}
+        <Route path="userTransactions" element={<UserTranactions />} />
+        <Route path='complete-swap-number' element={<CompleteSwapNumber/>}/> 
+      </Route>
+    </Routes>
+  </Router>
+  
   );
 }
 

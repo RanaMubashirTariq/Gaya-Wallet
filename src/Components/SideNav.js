@@ -1,10 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './SideNav.css';
-import { NavLink , Link} from 'react-router-dom';
+import { NavLink , Link, useLocation} from 'react-router-dom';
 
 export default function SideNav() {
   const [isOpen, setIsOpen] = useState(false);
   const sidebarRef = useRef();
+  const location = useLocation();
 
   // Close on outside click
   useEffect(() => {
@@ -19,6 +20,11 @@ export default function SideNav() {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [isOpen]);
+
+
+  useEffect(() => {
+    console.log('Current path:', location.pathname);
+  }, [location]);
 
   return (
     <>
@@ -37,10 +43,11 @@ export default function SideNav() {
 
         <div className="side-nav-menu">
           <ul>
-            <li><Link to="/dashboard"><img src='/Pictures/Dashboard.svg'/>Dashboard</Link></li>
-            <li><Link to="/insured-users"><img src='/Pictures/Insured.svg'/>insuredUser</Link></li>
-            <li><a href="#"><img src='/Pictures/UserTransaction.svg'/>User Transactions</a></li>
-            <li><a href="#"><img src='/Pictures/Insurance.svg'/>Insurance Payments</a></li>
+            <li><NavLink to="/dashboard" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}><img src='/Pictures/Dashboard.svg'/>Dashboard</NavLink></li>
+            <li><NavLink to="/dashboard/insured-users" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}><img src='/Pictures/Insured.svg'/>insured User</NavLink></li>
+            <li> <NavLink to="/dashboard/userTransactions" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}> <img src='/Pictures/UserTransaction.svg' /> User Transactions </NavLink></li>
+            <li><NavLink to="/dashboard/complete-swap-number" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}><img src='/Pictures/Insurance.svg' /> Insurance Payments</NavLink> </li>
+
           </ul>
         </div>
 

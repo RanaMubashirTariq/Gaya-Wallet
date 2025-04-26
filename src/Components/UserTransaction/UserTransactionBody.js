@@ -1,0 +1,107 @@
+import React from 'react';
+import {
+  Paper,
+  Table,
+  TableBody,
+  TableRow,
+  TableCell,
+  TableContainer,
+  IconButton,
+  Tooltip,
+  Box,
+} from '@mui/material';
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+
+
+export default function UserTransactionBody() {
+  const cellWidths =[60, 125, 135, 137, 150, 110, 225 , 140];
+
+  const users = Array.from({ length: 10 }, (_, i) => ({
+    id: i + 1,
+    inputToken: i % 3 === 0 ? 'Solana' : 'PEPE',
+    outputToken: i % 2 === 0 ? 'PEPE' : 'Solana',
+    inputAmount: i === 1 ? '$15,000' : '45,092',
+    outputAmount: i === 1 ? '$15,000' : '45,092',
+    exchange: i % 2 === 0 ? 'Jupiter' : 'Meteora',
+    hash: '1Ffmb....N455paPH',
+    date: '9/10/25 11:22:33',
+  }));
+
+  const handleCopy = (text) => {
+    navigator.clipboard.writeText(text);
+  };
+
+  const cellStyle = {
+    color: 'white',
+    fontSize: '14px',
+    fontWeight: 400,
+    fontFamily: 'Poppins',
+    borderBottom: 'none', // remove underline
+    textAlign:'left',
+    
+    '@media (max-width:765px)': {
+      fontSize: '12px',
+    },
+  };
+
+  return (
+    <TableContainer
+      component={Paper}
+      sx={{
+        backgroundColor: '#0C0C1E',
+        borderBottomLeftRadius: '12px',
+        borderBottomRightRadius: '12px',
+        overflow: 'hidden',
+      }}
+    >
+      <Table>
+        <TableBody>
+          {users.map((user, index) => (
+            <TableRow key={index}>
+              <TableCell sx={{ ...cellStyle, width: `${cellWidths[0]}px` }}>{user.id}</TableCell>
+              
+              <TableCell
+                sx={{
+                  ...cellStyle,
+                  width: `${cellWidths[1]}px`
+                }}
+              >
+                {user.inputToken}
+              </TableCell>
+
+
+              <TableCell sx={{ ...cellStyle, width: `${cellWidths[2]}px` }}>{user.outputToken}</TableCell>
+
+
+
+
+              <TableCell sx={{   ...cellStyle,   width: `${cellWidths[3]}px`,  }} > {user.inputAmount} </TableCell>
+              <TableCell sx={{   ...cellStyle,   width: `${cellWidths[4]}px`,  }} > {user.outputAmount} </TableCell>
+              <TableCell sx={{   ...cellStyle,   width: `${cellWidths[5]}px`,  }} > {user.exchange} </TableCell>
+
+
+              <TableCell sx={{ ...cellStyle, width: `${cellWidths[6]}px` }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  {user.hash}
+                  <Tooltip title="Copy Transaction Hash">
+                    <IconButton  sx={{fontSize:'small' , color:'white' , width:'16px' , height:'16px'}} onClick={() => handleCopy(user.hash)} >
+                      <ContentCopyIcon fontSize="small" />
+                    </IconButton>
+                    <IconButton  size="small">
+                    <ArrowOutwardIcon sx={{fontSize:'small' , color:'white' , width:'16px' , height:'16px'}} />
+                    </IconButton>
+                  </Tooltip>
+                </Box>
+              </TableCell>
+
+              <TableCell sx={{ ...cellStyle, width: `${cellWidths[7]}px` ,  whiteSpace:'none','@media (max-width:1060px)': {
+            fontSize: '12px',
+          },  }} >{user.date}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
+  );
+}

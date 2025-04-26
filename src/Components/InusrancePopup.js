@@ -96,7 +96,7 @@ export default function InusrancePopup({ open, onClose }) {
         {/* Buttons */}
         <div className="action-buttons">
           <button className="reset-filter-btn" onClick={resetAll}>Reset Filter</button>
-          <button className="apply-filter-btn" onClick={()=> setIsOpen(true)}><Link to='/no-insurance'>Apply Filter</Link></button>
+          <button className="apply-filter-btn" onClick={()=> setIsOpen(true)}><Link to='/dashboard/no-insurance'>Apply Filter</Link></button>
         </div>
       </DialogContent>
     </Dialog>

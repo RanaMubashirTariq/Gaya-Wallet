@@ -1,5 +1,6 @@
 import React , {useState , useEffect} from 'react';
 import './UserPopup.css';
+import { Link } from 'react-router-dom';
 import {
   FormControl,
   FormControlLabel,
@@ -82,7 +83,7 @@ export default function UserPopup({ open, onClose }) {
             <span>Send</span>
             <button className="reset-btn" onClick={resetdAmount}>Reset</button>
           </div>
-          <div className="input-group">
+          <div className="input-group-d">
             <input type="text" placeholder="Min Amount"       value={maxAmount.min}
              onChange={(e) => handleNumericChange(e, 'min')}/>
             <input type="text" placeholder="Max Amount"   value={maxAmount.max}
@@ -95,7 +96,7 @@ export default function UserPopup({ open, onClose }) {
             <span>Receive</span>
             <button className="reset-btn" onClick={resetReceiveFee}>Reset</button>
           </div>
-          <div className="input-group">
+          <div className="input-group-d">
             <input type="text" placeholder="Min Amount"  value={receiveFee.min}
               onChange={(e) => handleNumericChange(e, 'min')}/>
             <input type="text" placeholder="Max Amount"  value={receiveFee.max}
@@ -185,7 +186,7 @@ export default function UserPopup({ open, onClose }) {
       </div>
       <div className="footer-buttons">
           <button className="reset-filter" onClick={ resetAll }>Reset Filter</button>
-          <button className="apply-filter">Apply Filter</button>
+          <button className="apply-filter"><Link to='/dashboard/complete-swap-number'>Apply Filter</Link></button>
         </div>
     </div>
   );

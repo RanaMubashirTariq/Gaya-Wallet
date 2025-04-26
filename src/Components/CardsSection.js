@@ -109,15 +109,7 @@ export default function CardsSection() {
         <Button
           variant="contained"
           startIcon={<FilterAltIcon />}
-          sx={{
-            background:'linear-gradient(91.26deg, #1201FF 0%, #C597FD 100%)',
-            borderRadius: "20px",
-            textTransform: "none",
-            px: 3,
-            "&:hover": {
-             opacity:0.4,
-            },
-          }}
+           className='filter-btn'
         >
           Filter
         </Button>

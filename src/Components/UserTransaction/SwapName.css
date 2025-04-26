@@ -1,0 +1,112 @@
+.swap-number-upper-div{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.user-details-container {
+    width: 100%;
+    /* height: 225px; */
+    height: auto;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 24px;
+    border-radius: 15px;
+  }
+  
+  .user-details-card {
+    width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+  }
+  
+  .user-details-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1;
+  }
+  
+  .input-group label {
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 100%;
+    color: rgba(106, 132, 160, 1);
+  }
+  
+  .input-group input {
+    background: #2a2a2a;
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: 0;
+    margin: 0;
+  }
+  .input-group input::placeholder {
+    color: white;
+
+  }
+  
+
+  /* Button parts */
+
+  .three-btn-div{
+    display: flex;
+    width: 100%;
+    max-width:445px;
+    /* height: 60; */
+    gap: 5px;
+    border-radius: 15px;
+    padding: 12px;
+  }
+  .three-btn-div button{
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    word-wrap: none;
+    color: white;
+    padding: 10px 0px;
+  }
+  .three-btn-div button.active{
+    background: linear-gradient(91.26deg, #1201FF 0%, #C597FD 100%);
+    transition: all 0.5s ease;
+}
+
+
+
+@media screen and (max-width:480px) {
+  .user-details-flex {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+   .three-btn-div{
+    flex-wrap: wrap;
+   } 
+}

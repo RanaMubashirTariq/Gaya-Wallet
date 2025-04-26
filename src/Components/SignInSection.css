@@ -161,6 +161,7 @@
 @media screen and (max-width:960px) {
     .sign-in-container{
         padding: 100px 150px;
+        overflow: hidden;
     }
     .first-circle-shadow{
         position: absolute;
@@ -171,10 +172,10 @@
     }
     .second-circle-shadow{
         position: absolute;
-        width: 300px;
-        height: 300px;
-        top: 513px;
-        right: 40px;
+        width: 250px;
+        height: 250px;
+        top: 313px;
+        right: 0px;
         filter: blur(60px);
         opacity: 0.4;
       }
@@ -182,6 +183,7 @@
 @media screen and (max-width:660px) {
     .sign-in-container{
         padding: 50px 25px;
+        overflow: hidden;
     }
     .sign-in-inner-div{
         gap: 20px;
@@ -197,7 +199,7 @@
         position: absolute;
         width: 200px;
         height: 200px;
-        top: 413px;
+        top: 213px;
         right: 0px;
         filter: blur(40px);
         opacity: 0.4;

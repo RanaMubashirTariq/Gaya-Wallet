@@ -55,13 +55,14 @@
   cursor: pointer;
   font-size: 16px;
 }
-.input-group{
+.input-group-d{
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 10px;
 }
-.input-group input {
+.input-group-d input {
   width: 48%;
   /* width: 100%; */
   padding: 10px;
@@ -71,6 +72,9 @@
   border-radius: 10px;
   color: white;
   flex-grow: 1;
+}
+.input-group-d input::placeholder{
+  color: rgba(143, 162, 183, 1);
 }
 .radio-group label {
   display: block;
@@ -134,7 +138,8 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  max-width: 192px;
+  /* max-width: 192px; */
+  width: 48%;
 }
 
 .datepicker-label {
@@ -144,7 +149,7 @@
 }
 
 .custom-datepicker {
-  border-radius: 15px;
+  border-radius: 8px;
   background-color: #1b1b2f;
   color: #9fa8da;
   border: none;
@@ -154,6 +159,7 @@
   outline: none;
   appearance: none;
   position: relative;
+width: 100%;
 }
 
 .custom-datepicker::-webkit-calendar-picker-indicator {
@@ -176,15 +182,15 @@
     width: 80%;
     /* height: 90%; */
     /* max-height: 90%; */
-    padding: 15px;
+    padding: 0px;
   }
 
-  .input-group,
+  .input-group-d,
   .date-group {
     flex-direction: column;
     gap: 12px;
   }
-  .input-group input {
+  .input-group-d input {
     width: 100%;
   }
   .footer-buttons {
@@ -192,9 +198,24 @@
     width: 75%;
     gap: 12px;
   }
-
+  .custom-datepicker-wrapper {
+    width: 100%;
+  }
   .footer-buttons button {
     width: 100%;
+  }
+}
+
+@media screen and (max-width:370px) {
+  .popup-overlay-No-transaction-d{
+    width: 300px;
+    padding: 15px 5px;
+  }
+  .popup-box {
+    width: 80%;
+    /* height: 90%; */
+    /* max-height: 90%; */
+    padding: 15px 0px;
   }
 }
 
