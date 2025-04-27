@@ -1,4 +1,4 @@
-import React , {useState , useEffect} from 'react';
+import React , {useState , useEffect , useRef} from 'react';
 import './UserPopup.css';
 import { Link } from 'react-router-dom';
 import {
@@ -19,13 +19,25 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 
 export default function UserPopup({ open, onClose }) {
+  const popupRef = useRef(null);
 
   useEffect(() => {
-    document.body.style.overflow = open ? 'hidden' : 'auto';
+    function handleClickOutside(event) {
+      if (popupRef.current && !popupRef.current.contains(event.target)) {
+        onClose(); // Close if clicked outside the popup
+      }
+    }
+    if (open) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+     else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
     return () => {
-      document.body.style.overflow = 'auto'; // Reset when unmounting
+      document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [open]);
+  }, [open, onClose]);
+
   
 
                    
@@ -76,8 +88,8 @@ export default function UserPopup({ open, onClose }) {
 
 
   return (
-    <div className="popup-overlay-No-transaction-d">
-      <div className="popup-box">
+    <div className="popup-overlay-No-transaction-d" ref={popupRef}>
+      <div className="popup-box" >
         <div className="section">
           <div className="header">
             <span>Send</span>

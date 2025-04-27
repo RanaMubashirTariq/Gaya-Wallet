@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState} from 'react'
 import './CardsSection.css';
 import {
     Box,
@@ -12,10 +12,14 @@ import {
   import SearchIcon from "@mui/icons-material/Search";
   import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import TabelSection from './CompleteTableSection/TableSection'
+import MainSectionPupop from './MainSectionPupop'
 
 
 
 export default function CardsSection() {
+
+           const [open, setOpen] = useState(false);
+
   return (
 
        <div className='Data-main-div'>
@@ -110,6 +114,7 @@ export default function CardsSection() {
           variant="contained"
           startIcon={<FilterAltIcon />}
            className='filter-btn'
+           onClick={() => setOpen(true)} 
         >
           Filter
         </Button>
@@ -117,6 +122,7 @@ export default function CardsSection() {
           <TabelSection/>
     </Box>
          </div>
+          <MainSectionPupop open={open} onClose={() => setOpen(false)}/>
 
     </div>
   )

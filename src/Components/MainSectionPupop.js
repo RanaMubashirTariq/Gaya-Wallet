@@ -4,7 +4,7 @@ import './IncurancePopup.css';
 import NoInsurance from './NoInsurance';
 import { Link } from 'react-router-dom';
 
-export default function InusrancePopup({ open, onClose }) {
+export default function MainSectionPupop({ open, onClose }) {
   const [subscription, setSubscription] = useState('');
   const [insuredAmount, setInsuredAmount] = useState({ min: '', max: '' });
   const [insuranceFee, setInsuranceFee] = useState({ min: '', max: '' });
@@ -100,7 +100,7 @@ export default function InusrancePopup({ open, onClose }) {
         {/* Buttons */}
         <div className="action-buttons">
           <button className="reset-filter-btn" onClick={resetAll}>Reset Filter</button>
-          <button className="apply-filter-btn" onClick={()=> setIsOpen(true)}><Link to='/dashboard/no-user'>Apply Filter</Link></button>
+          <button className="apply-filter-btn" onClick={()=> setIsOpen(true)}>Apply Filter</button>
         </div>
       </DialogContent>
     </Dialog>

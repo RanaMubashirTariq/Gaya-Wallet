@@ -95,9 +95,7 @@ export default function UserTransactionBody() {
                 </Box>
               </TableCell>
 
-              <TableCell sx={{ ...cellStyle, width: `${cellWidths[7]}px` ,  whiteSpace:'none','@media (max-width:1060px)': {
-            fontSize: '12px',
-          },  }} >{user.date}</TableCell>
+              <TableCell sx={{ ...cellStyle, width: `${cellWidths[7]}px` ,  whiteSpace:'nowrap' }} >{user.date}</TableCell>
             </TableRow>
           ))}
         </TableBody>

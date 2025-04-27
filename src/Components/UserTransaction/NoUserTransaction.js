@@ -3,16 +3,16 @@ import { Box, colors } from '@mui/material'
 import './NoUserTransaction.css'
 export default function NoUserTransaction() {
   return (
-    <div>
+    <div className='no-user-main-container'>
 
 <div className='header-div-user'>
                          <h2>User Transaction</h2>
                   </div>
 
         <Box className="no-user-main-div">
-        <Box sx={{display:'flex' , flexDirection:'column' , alignItems:'center', fontFamily:'Poppins' , fontSize:'30px' , color:'white' , fontWeight:'500'}}>
-               <div className='img-div'>
-               <img src="/Pictures/NoUserTransaction.svg" alt="" />
+        <Box className="inner-no-user-div">
+               <div className='gradient-mask '>
+               {/* <img src="/Pictures/NoUserTransaction.svg" className='blend-img' /> */}
                </div>
         <h2>No User Transactions</h2>
         </Box>

@@ -18,14 +18,15 @@
     font-size: 25px;
     line-height: 100%;
     letter-spacing: 0px;
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
     text-transform: capitalize;
+    white-space: nowrap;
     color: rgba(255, 255, 255, 1);    
 }
 
 @media screen and (max-width:1300px) {
-    .header-div{
+    .header-div-user{
         padding: 35px 60px 0px 100px;
     }
 }
@@ -51,5 +52,14 @@
     .table-main-container {
       padding: 10px;
     } */
+  }
+
+  @media screen and (max-width:370px) {
+    .header-div-user{
+        padding: 40px 20px 0px 80px;
+    }
+    .header-div-user h2{
+      font-size: 20px;    
+  }
   }
 

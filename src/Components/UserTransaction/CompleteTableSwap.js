@@ -3,7 +3,7 @@ import BodyTableSwap from './BodyTableSwap'
 import HeaderTablesSwap from './HeaderTablesSwap'
 import { Box , Button} from '@mui/material';
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
-import UserPopup from '../UserPopup';
+import TransactionMonitroingPupop from './TransactionMonitroingPupop';
 
 
 export default function CompleteTableSwap() {
@@ -22,7 +22,7 @@ export default function CompleteTableSwap() {
             <HeaderTablesSwap/>
              <BodyTableSwap/>
             </Box>
-            <UserPopup  open={open} onClose={() => setOpen(false)}  />
+            <TransactionMonitroingPupop open={open} onClose={() => setOpen(false)}  />
     </Box>
     </Box>
   )

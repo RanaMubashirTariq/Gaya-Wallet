@@ -47,7 +47,6 @@
     text-transform: none;  
 }
 .filter-btn:hover{
-  padding: 0px 12px;
    opacity:0.4;
 }
 .search-div{
@@ -96,6 +95,13 @@
       flex-grow: 1 !important; 
       flex-shrink: 0;
       
+  }
+}
+
+
+@media screen and (max-width:370px) {
+  .header-div{
+      padding: 35px 25px 0px 100px;
   }
 }
 

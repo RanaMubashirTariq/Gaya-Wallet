@@ -1,7 +1,7 @@
 import React , {useState} from 'react'
 import { Box , Button} from '@mui/material';
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
-import UserPopup from '../UserPopup';
+import  TransactionMP2 from './TransactionMP2';
 import UserTransactionHeader2 from './UserTransactionHeader2'
 import UserTransactionBody from './UserTransactionBody'
 
@@ -22,7 +22,7 @@ export default function UserTransactionTable2() {
           <UserTransactionHeader2/>
           <UserTransactionBody/>
     </Box>
-    <UserPopup  open={open} onClose={() => setOpen(false)}  />
+    < TransactionMP2  open={open} onClose={() => setOpen(false)}  />
 </Box>
 </Box>
   )

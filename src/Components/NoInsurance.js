@@ -5,6 +5,9 @@ import './NoInsurance.css'
 export default function NoInsurance() {
   return (
         <div>
+                <div className='header-div-user'>
+                 <h2>Insured Users</h2>
+             </div>
                 <div className='main-container-d'>
            <div className='sb-main-container-d'>
                 <div className='User-pic-div'>

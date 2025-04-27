@@ -165,3 +165,14 @@
     }
   }
   
+
+  @media screen and (max-width:376px) {
+    .carv-line{
+        position: absolute;
+        width: 103px;
+        height: 61px;
+        top: 61px;
+        right: 10px;
+    }
+   
+  }

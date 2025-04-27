@@ -1,6 +1,6 @@
 import React , {useState} from 'react'
-import './InsuredUser.css'
-import TableSection from './CompleteTableSection/TableSection'
+import './UserTransactions.css'
+import TableSection from '../CompleteTableSection/TableSection'
 import {
     Box,
     TextField,

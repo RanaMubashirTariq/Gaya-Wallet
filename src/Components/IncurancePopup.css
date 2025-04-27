@@ -1,4 +1,4 @@
-rdo.main-popup-contianer{
+.main-popup-contianer{
   width: 100%;
   overflow-y: scroll;
 }
@@ -72,7 +72,7 @@ rdo.main-popup-contianer{
     color: rgba(143, 162, 183, 1);
   }
   
-  .input-group {
+  .input-group-container {
     display: flex;
     gap: 12px;
   }
