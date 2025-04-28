@@ -1,0 +1,135 @@
+.payment-tracking-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0px 60px 0px 29px;
+}
+.header-div-payment-tracking{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px 0px 0px 0px;
+}
+.header-div-payment-tracking h2{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 1);    
+}
+.complete-table-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+}
+.btn-cell-link{
+    border: none;
+    background: none;
+    outline: none;
+}
+.btn-cell-link a{
+    background: linear-gradient(91.26deg, #1201FF 0%, #C597FD 100%);
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+}
+
+.pyment-tracking-div{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 24px;
+}
+.inner-no-paymnet-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.no-paymnet-div{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+}
+.img-div-payment{
+    background: linear-gradient(91.26deg, #1201FF 0%, #C597FD 100%);
+    -webkit-mask-image: url(/public/Pictures/no-pyment-tracking.svg);
+    mix-blend-mode: multiply;
+    -webkit-mask-mode:luminance;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+  
+    mask-image: url(/public/Pictures/no-pyment-tracking.svg);
+    mask-mode: luminance;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+  
+    width: 250px;
+    height: 250px;
+  }
+  .no-paymnet-div h2{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 1);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1300px) {
+    .header-div-payment-tracking{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 35px 0px 0px 70px;
+    }
+}
+
+@media screen and (max-width:765px) {
+        .payment-tracking-container{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding: 0px 25px 0px 25px;
+        }
+    }
+
+@media screen and (max-width:480px) {
+    .img-div-payment{        
+        width: 180px;
+        height: 180px;
+      }
+    .no-paymnet-div h2{
+        font-size: 22px;
+      }
+}
+
+    @media screen and (max-width:370px) {
+        .header-div-payment-tracking h2{
+            font-size: 20px;
+        }
+}

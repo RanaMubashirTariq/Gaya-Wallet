@@ -46,7 +46,7 @@ export default function SideNav() {
             <li><NavLink to="/dashboard" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}><img src='/Pictures/Dashboard.svg'/>Dashboard</NavLink></li>
             <li><NavLink to="/dashboard/insured-users" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}><img src='/Pictures/Insured.svg'/>insured User</NavLink></li>
             <li> <NavLink to="/dashboard/userTransactions" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}> <img src='/Pictures/UserTransaction.svg' /> User Transactions </NavLink></li>
-            <li><NavLink to="/dashboard/user-transactions" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}><img src='/Pictures/Insurance.svg' /> Insurance Payments</NavLink> </li>
+            <li><NavLink to="/dashboard/payment-tracking" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}><img src='/Pictures/Insurance.svg' /> Insurance Payments</NavLink> </li>
 
           </ul>
         </div>
