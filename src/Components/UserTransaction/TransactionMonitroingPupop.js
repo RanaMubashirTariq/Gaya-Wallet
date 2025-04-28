@@ -68,6 +68,18 @@ export default function TransactionMonitroingPupop({open , onClose}) {
           alert("Please enter numeric value only.");
         }
       };
+
+      const handleFeeChange = (e, field) => {
+        const value = e.target.value;
+        if (  /^\d*$/.test(value)) {
+          setReceiveFee((prev) => ({
+            ...prev,
+            [field]: value,
+          }));
+        } else {
+          alert("Please enter numeric value only.");
+        }
+      };
       
     
     
@@ -95,9 +107,9 @@ export default function TransactionMonitroingPupop({open , onClose}) {
               </div>
               <div className="input-group-d">
                 <input type="text" placeholder="Min Amount"  value={receiveFee.min}
-                  onChange={(e) => handleNumericChange(e, 'min')}/>
+                  onChange={(e) => handleFeeChange(e, 'min')}/>
                 <input type="text" placeholder="Max Amount"  value={receiveFee.max}
-                onChange={(e) => handleNumericChange(e, 'max')}/>
+                onChange={(e) => handleFeeChange(e, 'max')}/>
               </div>
             </div>
     
