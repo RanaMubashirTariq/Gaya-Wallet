@@ -75,6 +75,18 @@ export default function UserPopup({ open, onClose }) {
     }
   };
   
+  
+  const handleNumericNums = (e, field) => {
+    const value = e.target.value;
+    if (  /^\d*$/.test(value)) {
+      setReceiveFee((prev) => ({
+        ...prev,
+        [field]: value,
+      }));
+    } else {
+      alert("Please enter numeric value only.");
+    }
+  };
 
 
   if (!open) return null;
@@ -110,9 +122,9 @@ export default function UserPopup({ open, onClose }) {
           </div>
           <div className="input-group-d">
             <input type="text" placeholder="Min Amount"  value={receiveFee.min}
-              onChange={(e) => handleNumericChange(e, 'min')}/>
+              onChange={(e) =>  handleNumericNums(e, 'min')}/>
             <input type="text" placeholder="Max Amount"  value={receiveFee.max}
-            onChange={(e) => handleNumericChange(e, 'max')}/>
+            onChange={(e) =>  handleNumericNums(e, 'max')}/>
           </div>
         </div>
 

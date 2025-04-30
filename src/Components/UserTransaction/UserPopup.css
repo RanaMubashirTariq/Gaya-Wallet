@@ -66,6 +66,7 @@
   width: 48%;
   /* width: 100%; */
   padding: 10px;
+  outline: none;
   background: #1E1F3B;
   border: none;
   border: 1px solid rgba(255, 255, 255, 0.02);
@@ -102,6 +103,7 @@
 .date-group input {
   width: 100%;
   padding: 10px;
+  outline: none;
   background: #1E1F3B;
   border: none;
   border-radius: 15px;
@@ -166,7 +168,7 @@ width: 100%;
 }
 
 .custom-datepicker::-webkit-calendar-picker-indicator {
-  filter: invert(70%);
+  filter: invert(70%) !important;
   cursor: pointer;
 }
 
