@@ -8,10 +8,6 @@ import {
   SvgIcon,
 } from "@mui/material";
 import CheckIcon from "@mui/icons-material/Check";
-import { TextField, InputAdornment } from '@mui/material';
-import { LocalizationProvider, DatePicker } from '@mui/x-date-pickers';
-import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 export default function TransactionMonitroingPupop({open , onClose}) {
      const popupRef = useRef(null);
@@ -19,7 +15,7 @@ export default function TransactionMonitroingPupop({open , onClose}) {
      useEffect(() => {
        function handleClickOutside(event) {
          if (popupRef.current && !popupRef.current.contains(event.target)) {
-           onClose(); // Close if clicked outside the popup
+           onClose(); 
          }
        }
        if (open) {

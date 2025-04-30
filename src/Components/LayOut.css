@@ -1,13 +1,13 @@
 .main-1{
     max-width: 100%;
       display: flex;
-      /* gap: 20px; */
+      /* overflow-y: hidden; */
   }
   .second-circle-shadow{
       position: absolute;
       width: 689px;
       height: 689px;
-      top: 718px;
+      top: 512px;
       right: 40px;
       border-radius: 50%;
       background: linear-gradient(92.24deg, #1201FF 0%, #C597FD 120.64%);
@@ -29,7 +29,7 @@
       position: absolute;
       width: 600px;
       height: 689px;
-      top: 618px;
+      top: 718px;
       right: 40px;
       border-radius: 50%;
       background: linear-gradient(92.24deg, #1201FF 0%, #C597FD 120.64%);
@@ -44,4 +44,29 @@
       height: 413px;
       z-index: 1;
       color: rgba(255, 255, 255, 0.03);
+    }
+
+
+
+    @media screen and (max-width:550px) {
+      .second-circle-shadow{
+        position: absolute;
+        width: 489px;
+        height: 489px;
+        top: 450px;
+        right: 40px;
+        border-radius: 50%;
+        background: linear-gradient(92.24deg, #1201FF 0%, #C597FD 120.64%);
+        filter: blur(100px);
+        opacity: 0.4;
+        z-index: 0;
+        overflow: hidden;
+      }
+      
+      .second-circle-shadow img{
+        width: 313px;
+        height: 313px;
+        z-index: 1;
+        color: rgba(255, 255, 255, 0.03);
+      }
     }

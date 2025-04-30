@@ -89,6 +89,7 @@
 .input-section-div input{
     padding: 17.5px 16px;
     border-radius: 15px;
+    outline: none;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.02);
     backdrop-filter: blur(70px);

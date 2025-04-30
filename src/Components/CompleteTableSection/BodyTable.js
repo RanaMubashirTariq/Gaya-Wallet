@@ -35,7 +35,7 @@ export default function BodyTable() {
     <TableContainer
       component={Paper}
       sx={{
-        backgroundColor: "#0C0C1E",
+        background: 'rgba(255, 255, 255, 0.05)',
         borderRadius: "7.66px",
         marginBottom: "16px",
         minWidth: "950px",

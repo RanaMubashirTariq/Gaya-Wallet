@@ -23,6 +23,7 @@
     filter: blur(100px);
     opacity: 0.4;
     z-index: 10001px;
+    pointer-events: none; 
 }
 .side-nav-logo{
     width: 193.5px;
@@ -33,16 +34,19 @@
     /* max-width: 232px; */
     padding: 0px 24px 592px 24px;
 }
-.side-nav-menu ul{
-    width: 100%;
-    height: 196px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
+.side-nav-menu ul {
+  width: 100%;
+  height: 196px;              /* Keep your fixed height */
+  overflow-y: auto;           /* Enable scrolling for overflow */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;                  /* Optional spacing between items */
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
 .side-nav-menu ul li a{
   width: 100%;
     display: flex;

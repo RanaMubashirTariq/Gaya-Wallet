@@ -9,7 +9,7 @@ export default function LayOut() {
   return (
     <div className="main-1">
       <div className="second-circle-shadow">
-        <img src="/Pictures/vector.svg" alt="background" />
+        {/* <img src="/Pictures/vector.svg" alt="background" /> */}
       </div>
       <SideNav />
       <Outlet /> {/* This is where nested pages load */}

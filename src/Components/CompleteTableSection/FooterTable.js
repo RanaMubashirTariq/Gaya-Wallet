@@ -21,7 +21,7 @@ export default function FooterTable() {
     <TableContainer
     component={Paper}
     sx={{
-      backgroundColor: "#1F1F30",
+      background: 'rgba(255, 255, 255, 0.05)',
       borderRadius: "7.66px",
       minWidth: "950px",
     }}

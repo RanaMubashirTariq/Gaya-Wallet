@@ -1,4 +1,5 @@
 import React , {useState} from 'react'
+import './LayOut.css'
 import './CardsSection.css';
 import {
     Box,
@@ -23,6 +24,7 @@ export default function CardsSection() {
   return (
 
        <div className='Data-main-div'>
+         <div className="second-circle-shadow-3"></div>
 
         {/*  Partv 1 */}
  
