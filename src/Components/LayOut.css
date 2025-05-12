@@ -2,6 +2,7 @@
     max-width: 100%;
       display: flex;
       overflow-y: hidden;
+      position: relative;
   }
   .second-circle-shadow{
       position: absolute;

@@ -46,17 +46,17 @@
     align-items:flex-start;
     gap: 24px;
 }
-.inner-no-paymnet-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
 .no-paymnet-div{
     position: fixed;
     top:50%;
     left:50%;
     transform: translate(-50% , -50%);
+}
+.inner-no-paymnet-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 .img-div-payment{
     background: linear-gradient(91.26deg, #1201FF 0%, #C597FD 100%);

@@ -4,7 +4,7 @@ import './NoInsurance.css'
 
 export default function NoInsurance() {
   return (
-        <div>
+        <div className='no-user-main-container'>
                 <div className='header-div-user'>
                  <h2>Insured Users</h2>
              </div>

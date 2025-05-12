@@ -9,16 +9,18 @@ export default function SideNav() {
 
   // Close on outside click
   useEffect(() => {
-    function handleClickOutside(event) {
-      if (isOpen && sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+    document.body.style.overflow = isOpen ? 'hidden' : 'auto';
+  }, [isOpen]);
+
+  // Close on outside click (unchanged) …
+  useEffect(() => {
+    function handleClickOutside(e) {
+      if (isOpen && sidebarRef.current && !sidebarRef.current.contains(e.target)) {
         setIsOpen(false);
       }
     }
-
     document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [isOpen]);
 
 

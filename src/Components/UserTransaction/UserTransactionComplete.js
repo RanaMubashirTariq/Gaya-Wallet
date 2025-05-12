@@ -1,5 +1,5 @@
 import React from 'react'
-import './CompleteSwapNumber.css'
+import './UserTransactions.css'
 import UserTransaction2 from './UserTransaction2'
 import UserTransactionTable2 from './UserTransactionTable2'
 

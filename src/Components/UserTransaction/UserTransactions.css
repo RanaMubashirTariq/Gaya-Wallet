@@ -25,6 +25,7 @@
     color: rgba(255, 255, 255, 1);    
 }
 
+
 @media screen and (max-width:1300px) {
     .header-div-user{
         padding: 35px 60px 0px 100px;

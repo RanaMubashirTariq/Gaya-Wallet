@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, colors } from '@mui/material'
 import './NoUserTransaction.css'
-import '../LayOut.css'
+// import '../LayOut.css'
 export default function NoUserTransaction() {
   return (
     <div className='no-user-main-container'> 

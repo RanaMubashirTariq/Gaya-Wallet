@@ -5,12 +5,12 @@
     gap: 50px;
     /* overflow-y: hidden; */
     min-height: 100vh;
+    padding: 0px 35px 35px 29px;
 }
 .swap-main-bottom-div{
     display: flex;
     flex-direction: column;
     gap: 24px;
-    padding: 0px 35px 35px 29px;
 }
 
 

@@ -1,7 +1,7 @@
 .sign-in-container{
     max-width: 100%;
     padding: 346px 480px;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +30,7 @@
     position: absolute;
     width: 689px;
     height: 689px;
-    top: 718px;
+    top: 518px;
     right: 40px;
     border-radius: 50%;
     background: linear-gradient(92.24deg, #1201FF 0%, #C597FD 120.64%);
@@ -143,7 +143,9 @@
 
 @media screen and (max-width:1340px) {
     .sign-in-container{
-        padding: 200px 300px;
+        padding: 100px 300px;
+        min-height: 100vh;
+        overflow: hidden;
     }
     .first-circle-shadow{
         position: absolute;
@@ -185,7 +187,6 @@
 @media screen and (max-width:660px) {
     .sign-in-container{
         padding: 50px 25px;
-        /* min-width: 100vh; */
     }
     .sign-in-inner-div{
         gap: 20px;
