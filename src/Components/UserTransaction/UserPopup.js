@@ -42,14 +42,17 @@ export default function UserPopup({ open, onClose }) {
 
                    
   const [checked, setChecked] =useState(true);
-  const [value, setValue] = useState(new Date());
+  const [dateRange, setDateRange] = useState({from: '', to: ''});
     const [maxAmount, setMaxAmount] = useState({ min: '', max: '' });
     const [receiveFee, setReceiveFee] = useState({ min: '', max: '' });
     const [selectedToken, setSelectedToken] = useState("solve");
        
     const resetdAmount = () => setMaxAmount({ min: '', max: '' });
     const resetReceiveFee = () => setReceiveFee({ min: '', max: '' });
-    const clearDate = () => setValue({From: '5/04/2025' , To: '5/04/2025'});
+    const clearDate = () => {
+       console.log('hello');
+       setDateRange({ from: '10/05/2025', to: '10/05/2025' })
+    } ;
     const clearToken = () => setSelectedToken("solve");
     const resetAll = () => {
       clearDate();
@@ -90,13 +93,6 @@ export default function UserPopup({ open, onClose }) {
 
 
   if (!open) return null;
-
-
-
-
-
-
-
 
 
   return (
@@ -199,11 +195,12 @@ export default function UserPopup({ open, onClose }) {
           <div className="date-group">
           <div className="custom-datepicker-wrapper">
               <label className="datepicker-label">From</label>
-              <input type="date" className="custom-datepicker" />
+              <input type="date" className="custom-datepicker" onChange={(e) => setDateRange((prev) => ({ ...prev, from: e.target.value }))} />
     </div>
     <div className="custom-datepicker-wrapper">
               <label className="datepicker-label">To</label>
-              <input type="date" className="custom-datepicker" />
+              <input type="date" className="custom-datepicker"   value={dateRange.from}
+                     onChange={(e) => setDateRange((prev) => ({ ...prev, to: e.target.value }))}/>
     </div>
           </div>
         </div>
