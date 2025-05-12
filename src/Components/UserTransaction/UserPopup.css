@@ -156,7 +156,7 @@
 .custom-datepicker {
   border-radius: 8px;
   background-color: #1b1b2f;
-  color: #9fa8da;
+  color: #9fa8da !important;
   border: none;
   padding: 0 12px;
   height: 48px;

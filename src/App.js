@@ -7,7 +7,6 @@ import './App.css';
 import UserTranactions from './Components/UserTransaction/UserTransactions';
 import LayOut from './Components/LayOut'
 import CompleteSwapNumber from './Components/UserTransaction/CompleteSwapNumber'
-import UserTransaction2 from './Components/UserTransaction/UserTransaction2';
 import UserTransactionComplete from './Components/UserTransaction/UserTransactionComplete'
 import NoUserTransaction from './Components/UserTransaction/NoUserTransaction';
 import PaymentTracking1 from './Components/PaymentTrackingSection/PaymentTracking1';

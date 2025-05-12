@@ -53,7 +53,7 @@ export default function SignInSection() {
                          </div>
                   </div>
                    
-                <button className='sign-in-btn' onClick={signIn }><Link>Sign In</Link></button>
+                <button className='sign-in-btn' onClick={signIn }><Link to={'/dashboard'}>Sign In</Link></button>
 
             </div>
             </div>

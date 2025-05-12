@@ -13,7 +13,7 @@
     /* position: relative; */
 }
 .first-circle-shadow{
-    position: absolute;
+    position: fixed;
     width: 313px;
     height: 313px;
     top: 0;

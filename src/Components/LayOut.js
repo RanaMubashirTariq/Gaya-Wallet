@@ -12,7 +12,7 @@ export default function LayOut() {
         {/* <img src="/Pictures/vector.svg" alt="background" /> */}
       </div>
       <SideNav />
-      <Outlet /> {/* This is where nested pages load */}
+      <Outlet />
     </div>
   )
 }

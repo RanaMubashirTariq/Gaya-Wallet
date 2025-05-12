@@ -32,9 +32,20 @@
 
 @media screen and (max-width:765px) {
     .header-div{
-        padding: 35px 25px 0px 60px;
+        padding: 40px 25px 0px 60px !important;
     }
     .main-data-section{
         padding: 0px 25px 40px 25px;
+    }
+    .header-div h2{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:356px) {
+    .header-div{
+        padding: 40px 25px 0px 50px !important;
+    }
+    .header-div h2{
+        font-size: 17px;
     }
 }

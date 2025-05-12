@@ -1,13 +1,13 @@
 .main-1{
     max-width: 100%;
       display: flex;
-      /* overflow-y: hidden; */
+      overflow-y: hidden;
   }
   .second-circle-shadow{
       position: absolute;
       width: 689px;
       height: 689px;
-      top: 512px;
+      top: 412px;
       right: 40px;
       border-radius: 50%;
       background: linear-gradient(92.24deg, #1201FF 0%, #C597FD 120.64%);
@@ -28,7 +28,7 @@
     .second-circle-shadow-3{
       position: absolute;
       width: 600px;
-      height: 689px;
+      height: 600px;
       top: 718px;
       right: 40px;
       border-radius: 50%;
@@ -76,7 +76,7 @@
         position: absolute;
         width: 489px;
         height: 489px;
-        top: 450px;
+        top: 350px;
         right: 40px;
         border-radius: 50%;
         background: linear-gradient(92.24deg, #1201FF 0%, #C597FD 120.64%);
