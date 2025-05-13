@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Dialog, DialogContent } from '@mui/material';
 import { Link } from 'react-router-dom';
+import './PaymentPopup.css';
 
 export default function InusrancePopup({ open, onClose }) {
 
@@ -23,7 +24,7 @@ export default function InusrancePopup({ open, onClose }) {
 
   return (
     <Dialog open={open} onClose={onClose} className='main-popup-contianer'>
-      <DialogContent className="popup-container popup-overlay">
+      <DialogContent className="popup-container popup-overlay-d">
         {/* Subscription */}
         <div className="popup-section">
           <div className="section-header">

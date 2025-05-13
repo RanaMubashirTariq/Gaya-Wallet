@@ -12,22 +12,25 @@ import CheckIcon from "@mui/icons-material/Check";
 export default function TransactionMonitroingPupop({open , onClose}) {
      const popupRef = useRef(null);
    
-     useEffect(() => {
-       function handleClickOutside(event) {
-         if (popupRef.current && !popupRef.current.contains(event.target)) {
-           onClose(); 
-         }
-       }
-       if (open) {
-         document.addEventListener('mousedown', handleClickOutside);
-       }
-        else {
-         document.removeEventListener('mousedown', handleClickOutside);
-       }
-       return () => {
-         document.removeEventListener('mousedown', handleClickOutside);
-       };
-     }, [open, onClose]);
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (popupRef.current && !popupRef.current.contains(event.target)) {
+        onClose();
+      }
+    }
+  
+    if (open) {
+      document.addEventListener('mousedown', handleClickOutside);
+      document.body.classList.add("no-scroll"); // prevent background scroll
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.body.classList.remove("no-scroll");
+    };
+  }, [open, onClose]);
       
     
                        

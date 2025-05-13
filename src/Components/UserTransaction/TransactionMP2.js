@@ -16,22 +16,25 @@ import React , {useState , useEffect , useRef} from 'react';
 export default function TransactionMP2({open , onClose}) {
            const popupRef = useRef(null);
          
-           useEffect(() => {
-             function handleClickOutside(event) {
-               if (popupRef.current && !popupRef.current.contains(event.target)) {
-                 onClose(); // Close if clicked outside the popup
-               }
-             }
-             if (open) {
-               document.addEventListener('mousedown', handleClickOutside);
-             }
-              else {
-               document.removeEventListener('mousedown', handleClickOutside);
-             }
-             return () => {
-               document.removeEventListener('mousedown', handleClickOutside);
-             };
-           }, [open, onClose]);
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (popupRef.current && !popupRef.current.contains(event.target)) {
+        onClose();
+      }
+    }
+  
+    if (open) {
+      document.addEventListener('mousedown', handleClickOutside);
+      document.body.classList.add("no-scroll"); // prevent background scroll
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.body.classList.remove("no-scroll");
+    };
+  }, [open, onClose]);
         
       
                          
