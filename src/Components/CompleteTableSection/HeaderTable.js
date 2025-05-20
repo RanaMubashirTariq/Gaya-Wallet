@@ -41,6 +41,7 @@ export default function HeaderTable() {
               key={idx}
               sx={{
                 width: `${headerWidths[idx]}px`,
+                 background: 'rgba(255, 255, 255, 0.05)',
                 color: "rgba(143, 162, 183, 1)",
                 fontSize: "14px",
                 fontWeight: 500,

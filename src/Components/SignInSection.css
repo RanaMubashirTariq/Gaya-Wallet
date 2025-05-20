@@ -1,11 +1,12 @@
-.sign-in-container{
-    max-width: 100%;
-    padding: 346px 480px;
-    /* min-height: 100vh; */
+.sign-in-container {
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
     position: relative;
+    overflow: hidden;
 }
 .sign-in-inner-div{
     width: 100%;
@@ -26,7 +27,7 @@
     filter: blur(100px);
     opacity: 0.4;
 }
-.second-circle-shadow{
+.second-circle-shadow-2{
     position: absolute;
     width: 689px;
     height: 689px;
@@ -39,7 +40,7 @@
     z-index: 0;
   }
   
-  .second-circle-shadow img{
+  .second-circle-shadow-2 img{
     width: 413px;
     height: 413px;
     z-index: 1;
@@ -72,11 +73,9 @@
     margin:0;
 }
 .input-section-div{
-    /* max-width: 390px; */
     padding: 0px 45px;
     display: flex;
     flex-direction: column;
-    grid-area: 24px;
 }
 .input-section-div label{
     font-family: Poppins;
@@ -142,29 +141,15 @@
 
 
 @media screen and (max-width:1340px) {
-    .sign-in-container{
-        padding: 100px 300px;
-        min-height: 100vh;
-        overflow: hidden;
+    .sign-in-container {
+        padding: 0 60px;
     }
-    .first-circle-shadow{
-        position: absolute;
-        width: 250px;
-        height: 250px;
-    }
-    .second-circle-shadow{
-        position: absolute;
-        width: 400px;
-        height: 400px;
-        top: 513px;
-        right: 40px;
-      }
 }
 
 
 @media screen and (max-width:960px) {
     .sign-in-container{
-        padding: 100px 150px;
+        padding: 50px 150px 50px 150px;
         overflow: hidden;
     }
     .first-circle-shadow{
@@ -174,7 +159,7 @@
         filter: blur(60px);
         opacity: 0.4;
     }
-    .second-circle-shadow{
+    .second-circle-shadow-2{
         position: absolute;
         width: 250px;
         height: 250px;
@@ -186,10 +171,10 @@
 }
 @media screen and (max-width:660px) {
     .sign-in-container{
-        padding: 50px 25px;
+        padding: 0px 25px;
     }
     .sign-in-inner-div{
-        gap: 20px;
+        gap: 10px;
     }
     .first-circle-shadow{
         position: absolute;
@@ -198,7 +183,7 @@
         filter: blur(20px);
         opacity: 0.4;
     }
-    .second-circle-shadow{
+    .second-circle-shadow-2{
         position: absolute;
         width: 300px;
         height: 300px;

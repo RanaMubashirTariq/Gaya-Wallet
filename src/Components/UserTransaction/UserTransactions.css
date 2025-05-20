@@ -25,11 +25,23 @@
     color: rgba(255, 255, 255, 1);    
 }
 
+.table-main-container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
 
-@media screen and (max-width:1300px) {
-    .header-div-user{
+    @media screen and (max-width:1300px) {
+      .header-div-user{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
         padding: 35px 60px 0px 100px;
-    }
+        z-index: 1001; /* Ensure it's above other elements */
+        background-color: rgba(0, 0, 0, 0.4); /* Or a solid color for clarity */
+        backdrop-filter: blur(10px); /* Optional if using blur effect */
+      }
 }
 
 

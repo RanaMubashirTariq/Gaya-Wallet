@@ -29,6 +29,7 @@ export default function InsuredUser() {
              <Box className='table-main-container'>
       {/* Header Row */}
       <Box className='table-upper-div'>
+        
         <Box className='search-div'>
           <TextField
             fullWidth

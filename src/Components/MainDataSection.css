@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    position: relative;
 }
 .header-div{
     width: 100%;
@@ -24,9 +25,16 @@
 }
 
 @media screen and (max-width:1300px) {
-    .header-div{
-        padding: 35px 60px 0px 100px;
-    }
+ .header-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 35px 60px 0px 100px;
+  z-index: 1001; /* Ensure it's above other elements */
+  background-color: rgba(0, 0, 0, 0.4); /* Or a solid color for clarity */
+  backdrop-filter: blur(10px); /* Optional if using blur effect */
+}
 }
 
 
@@ -36,14 +44,6 @@
     }
     .main-data-section{
         padding: 0px 25px 40px 25px;
-    }
-    .header-div h2{
-        font-size: 20px;
-    }
-}
-@media screen and (max-width:356px) {
-    .header-div{
-        padding: 40px 25px 0px 50px !important;
     }
     .header-div h2{
         font-size: 17px;

@@ -27,7 +27,7 @@ export default function UserTransactionHeader2() {
     <TableContainer
     component={Paper}
     sx={{
-      backgroundColor: '#000000',
+      background: 'rgba(255, 255, 255, 0.05)',
       borderRadius: "7.66px",
       marginBottom: "16px",
       minWidth: "950px",
@@ -41,6 +41,7 @@ export default function UserTransactionHeader2() {
               key={idx}
               sx={{
                 width: `${headerWidths[idx]}px`,
+                    background: 'rgba(255, 255, 255, 0.05)',
                 color: "rgba(143, 162, 183, 1)",
                 fontSize: "14px",
                 fontWeight: 500,

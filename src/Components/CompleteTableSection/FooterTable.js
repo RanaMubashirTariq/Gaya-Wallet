@@ -11,6 +11,7 @@ import {
 export default function FooterTable() {
 
     const cellStyle = {
+       background: 'rgba(255, 255, 255, 0.05)',
         color: "white",
         fontSize: "14px",
         fontWeight: 400,
@@ -33,7 +34,7 @@ export default function FooterTable() {
     <TableCell sx={{ width: "130px" }} />
     <TableCell sx={{ width: "220px" }} />
     <TableCell sx={{ width: "210px" }} />
-    <TableCell sx={{ ...cellStyle, width: "160px" ,        '@media (max-width:765px)': {
+    <TableCell sx={{ ...cellStyle, width: "160px" ,  background: 'rgba(255, 255, 255, 0.05)',       '@media (max-width:765px)': {
             fontSize: '12px',
           }, }}>$35,000</TableCell>
     <TableCell sx={{ width: "130px" }} />

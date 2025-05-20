@@ -24,10 +24,12 @@ export default function BodyTable() {
 
 
       const cellStyle = {
+        background: 'rgba(255, 255, 255, 0.05)',
         color: "white",
         fontSize: "14px",
         fontWeight: 400,
         fontFamily: "Poppins",
+        // borderBottom:'3px'
       };
 
 

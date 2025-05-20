@@ -8,14 +8,17 @@
       position: absolute;
       width: 689px;
       height: 689px;
-      top: 412px;
+      top: 718px;
       right: 40px;
       border-radius: 50%;
-      background: linear-gradient(92.24deg, #1201FF 0%, #C597FD 120.64%);
+      background: url(/public/Pictures/vector.svg) ,  linear-gradient(92.24deg, #1201FF 0%, #C597FD 120.64%);
+      background-repeat: none;
+      background-position: center;
+      background-size: cover;
       filter: blur(100px);
       opacity: 0.4;
-      z-index: 0;
-      overflow: hidden;
+      /* z-index: 0; */
+      /* overflow: hidden; */
     }
     
     .second-circle-shadow img{
