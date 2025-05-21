@@ -20,7 +20,7 @@ export default function CoTablePt2() {
             </Button>
            </Link>
 
-        <Box sx={{ overflowX: "auto",width:'100%' }}>
+        <Box className="hide-scrollbar" sx={{ overflowX: "auto",width:'100%' }}>
             <Box  sx={{ minWidth: '1060px', tableLayout: 'fixed' }}>
                 <Pt2Header/>
                 <Pt2Body/>

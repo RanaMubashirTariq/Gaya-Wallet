@@ -33,6 +33,7 @@ export default function BodyTableSwap() {
 
   const cellStyle = {
     color: 'white',
+    background: 'rgba(255, 255, 255, 0.05)',
     fontSize: '14px',
     fontWeight: 400,
     fontFamily: 'Poppins',
@@ -47,7 +48,7 @@ export default function BodyTableSwap() {
     <TableContainer
       component={Paper}
       sx={{
-        backgroundColor: '#0C0C1E',
+        background: 'rgba(255, 255, 255, 0.05)',
         borderBottomLeftRadius: '12px',
         borderBottomRightRadius: '12px',
         overflow: 'hidden',
@@ -57,32 +58,45 @@ export default function BodyTableSwap() {
         <TableBody>
           {users.map((user, index) => (
             <TableRow key={index}>
-              <TableCell sx={{ ...cellStyle, width: `${cellWidths[0]}px` }}>{user.id}</TableCell>
+              <TableCell sx={{ ...cellStyle, width: `${cellWidths[0]}px` , '@media (max-width:770px)': {
+                    fontSize: '12px', py:'2px',  px:'10px',
+                 },  }}>{user.id}</TableCell>
               
               <TableCell
                 sx={{
                   ...cellStyle,
                   width: `${cellWidths[1]}px`,
                   color: user.category.includes('Send') ? '#FF4D4D' : '#00FF00',
+                  '@media (max-width:770px)': {
+                    fontSize: '12px', py:'2px',  px:'10px',
+                 },
                 }}
               >
                 {user.category}
               </TableCell>
 
 
-              <TableCell sx={{ ...cellStyle, width: `${cellWidths[2]}px` }}>{user.token}</TableCell>
+              <TableCell sx={{ ...cellStyle, width: `${cellWidths[2]}px` , '@media (max-width:770px)': {
+                    fontSize: '12px', py:'2px',  px:'10px',
+                 },}}>{user.token}</TableCell>
 
 
 
 
-              <TableCell sx={{   ...cellStyle,   width: `${cellWidths[3]}px`,  }} > {user.amount} </TableCell>
+              <TableCell sx={{   ...cellStyle,   width: `${cellWidths[3]}px`, '@media (max-width:770px)': {
+                    fontSize: '12px', py:'2px',  px:'10px',
+                 }, }} > {user.amount} </TableCell>
 
 
-              <TableCell sx={{ ...cellStyle, width: `${cellWidths[4]}px` }}>
-                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <TableCell sx={{ ...cellStyle, width: `${cellWidths[4]}px` , '@media (max-width:770px)': {
+                    fontSize: '12px', py:'2px',  px:'10px',
+                 }, }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center'  , '@media (max-width:770px)': {
+                    fontSize: '12px', py:'2px',  px:'10px',
+                 },}}>
                   {user.hash}
                   <Tooltip title="Copy Transaction Hash">
-                    <IconButton  sx={{fontSize:'small' , color:'white' , width:'16px' , height:'16px'}} onClick={() => handleCopy(user.hash)} sx={{ ml: 1, color: '#ccc' }}  >
+                    <IconButton  sx={{fontSize:'small' , color:'white' , width:'16px' , height:'16px' }} onClick={() => handleCopy(user.hash)} sx={{ ml: 1, color: '#ccc' }}  >
                       <ContentCopyIcon fontSize="small" />
                     </IconButton>
                     <IconButton  size="small">
@@ -92,11 +106,17 @@ export default function BodyTableSwap() {
                 </Box>
               </TableCell>
 
-              <TableCell sx={{ ...cellStyle, width: `${cellWidths[5]}px` }}>{user.date}</TableCell>
+              <TableCell sx={{ ...cellStyle, width: `${cellWidths[5]}px` , '@media (max-width:770px)': {
+                    fontSize: '12px', py:'2px',  px:'10px',
+                 }, }}>{user.date}</TableCell>
 
-              <TableCell sx={{ ...cellStyle, width: `${cellWidths[6]}px` }}>
+              <TableCell sx={{ ...cellStyle, width: `${cellWidths[6]}px` , '@media (max-width:770px)': {
+                    fontSize: '12px', py:'2px',  px:'10px',
+                 }, }}>
                 {/* You can replace this with your platform loader icon */}
-                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' , '@media (max-width:770px)': {
+                    fontSize: '12px', py:'2px',  px:'10px',
+                 }, }}>
                   <img
                     src="/Pictures/gaya.svg"
                     alt="platform"

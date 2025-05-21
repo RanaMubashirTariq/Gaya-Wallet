@@ -33,23 +33,23 @@ export default function UserTransactionBody() {
   };
 
   const cellStyle = {
+    background: 'rgba(255, 255, 255, 0.05)',
     color: 'white',
     fontSize: '14px',
     fontWeight: 400,
     fontFamily: 'Poppins',
     borderBottom: 'none', // remove underline
     textAlign:'left',
-    
-    '@media (max-width:765px)': {
-      fontSize: '12px',
-    },
+    '@media (max-width:770px)': {
+                    fontSize: '12px', py:'2px',  px:'10px',
+                 },
   };
 
   return (
     <TableContainer
       component={Paper}
       sx={{
-        backgroundColor: '#0C0C1E',
+        background: 'rgba(255, 255, 255, 0.05)',
         borderBottomLeftRadius: '12px',
         borderBottomRightRadius: '12px',
         overflow: 'hidden',
@@ -59,30 +59,46 @@ export default function UserTransactionBody() {
         <TableBody>
           {users.map((user, index) => (
             <TableRow key={index}>
-              <TableCell sx={{ ...cellStyle, width: `${cellWidths[0]}px` }}>{user.id}</TableCell>
+              <TableCell sx={{ ...cellStyle, width: `${cellWidths[0]}px` , '@media (max-width:770px)': {
+                    fontSize: '12px', py:'2px',  px:'10px',
+                 }, }}>{user.id}</TableCell>
               
               <TableCell
                 sx={{
                   ...cellStyle,
-                  width: `${cellWidths[1]}px`
+                  width: `${cellWidths[1]}px`, '@media (max-width:770px)': {
+                    fontSize: '12px', py:'2px',  px:'10px',
+                 },
                 }}
               >
                 {user.inputToken}
               </TableCell>
 
 
-              <TableCell sx={{ ...cellStyle, width: `${cellWidths[2]}px` }}>{user.outputToken}</TableCell>
+              <TableCell sx={{ ...cellStyle, width: `${cellWidths[2]}px` , '@media (max-width:770px)': {
+                    fontSize: '12px', py:'2px',  px:'10px',
+                 }, }}>{user.outputToken}</TableCell>
 
 
 
 
-              <TableCell sx={{   ...cellStyle,   width: `${cellWidths[3]}px`,  }} > {user.inputAmount} </TableCell>
-              <TableCell sx={{   ...cellStyle,   width: `${cellWidths[4]}px`,  }} > {user.outputAmount} </TableCell>
-              <TableCell sx={{   ...cellStyle,   width: `${cellWidths[5]}px`,  }} > {user.exchange} </TableCell>
+              <TableCell sx={{   ...cellStyle,   width: `${cellWidths[3]}px`, '@media (max-width:770px)': {
+                    fontSize: '12px', py:'2px',  px:'10px',
+                 }, }} > {user.inputAmount} </TableCell>
+              <TableCell sx={{   ...cellStyle,   width: `${cellWidths[4]}px`, '@media (max-width:770px)': {
+                    fontSize: '12px', py:'2px',  px:'10px',
+                 },  }} > {user.outputAmount} </TableCell>
+              <TableCell sx={{   ...cellStyle,   width: `${cellWidths[5]}px`, '@media (max-width:770px)': {
+                    fontSize: '12px', py:'2px',  px:'10px',
+                 }, }} > {user.exchange} </TableCell>
 
 
-              <TableCell sx={{ ...cellStyle, width: `${cellWidths[6]}px` }}>
-                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <TableCell sx={{ ...cellStyle, width: `${cellWidths[6]}px` , '@media (max-width:770px)': {
+                    fontSize: '12px', py:'2px',  px:'10px',
+                 },}}>
+                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' , '@media (max-width:770px)': {
+                    fontSize: '12px', py:'2px',  px:'10px',
+                 }, }}>
                   {user.hash}
                   <Tooltip title="Copy Transaction Hash">
                     <IconButton  sx={{fontSize:'small' , color:'white' , width:'16px' , height:'16px'}} onClick={() => handleCopy(user.hash)} >
@@ -95,7 +111,9 @@ export default function UserTransactionBody() {
                 </Box>
               </TableCell>
 
-              <TableCell sx={{ ...cellStyle, width: `${cellWidths[7]}px` ,  whiteSpace:'nowrap' }} >{user.date}</TableCell>
+              <TableCell sx={{ ...cellStyle, width: `${cellWidths[7]}px` ,  whiteSpace:'nowrap' , '@media (max-width:770px)': {
+                    fontSize: '12px', py:'2px',  px:'10px',
+                 }, }} >{user.date}</TableCell>
             </TableRow>
           ))}
         </TableBody>

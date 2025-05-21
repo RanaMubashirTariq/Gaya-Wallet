@@ -19,7 +19,7 @@ export default function CoTablePt() {
                      Filter
                    </Button>
    
-                 <Box sx={{ overflowX: "auto",width:'100%' }}>
+                 <Box className="hide-scrollbar" sx={{ overflowX: "auto",width:'100%' }}>
                     <Box  sx={{ minWidth: '1060px', tableLayout: 'fixed' }}>
                          <PaymentTracking1Header/>
                          <PaymentTracking1Body/>

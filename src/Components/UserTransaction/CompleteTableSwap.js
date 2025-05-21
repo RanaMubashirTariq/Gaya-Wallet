@@ -17,7 +17,7 @@ export default function CompleteTableSwap() {
             <Button onClick={() => setOpen(true)} variant="contained" startIcon={<FilterAltIcon />}  className='filter-btn'>
               Filter
             </Button>
-    <Box sx={{ overflowX: "auto", width:'100%' }}>
+    <Box className="hide-scrollbar" sx={{ overflowX: "auto", width:'100%' }}>
             <Box  sx={{ minWidth: '1060px', tableLayout: 'fixed' }}>
             <HeaderTablesSwap/>
              <BodyTableSwap/>

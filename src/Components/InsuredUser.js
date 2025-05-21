@@ -26,7 +26,7 @@ export default function InsuredUser() {
                  <h2>Insured Users</h2>
              </div>
 
-             <Box className='table-main-container'>
+             <Box className='table-main-container-d'>
       {/* Header Row */}
       <Box className='table-upper-div'>
         

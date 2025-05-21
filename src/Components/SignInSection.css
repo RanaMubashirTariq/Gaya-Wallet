@@ -144,6 +144,9 @@
     .sign-in-container {
         padding: 0 60px;
     }
+    .sign-in-inner-div{
+    gap: 20px;
+}
 }
 
 

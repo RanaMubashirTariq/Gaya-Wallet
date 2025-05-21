@@ -25,7 +25,7 @@
     color: rgba(255, 255, 255, 1);    
 }
 
-.table-main-container{
+.table-main-container-d{
   display: flex;
   flex-direction: column;
   padding-top: 100px;
@@ -47,7 +47,7 @@
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 765px) {
     .main-data-section{
         padding: 0px 25px 45px 25px;
     }
@@ -76,3 +76,18 @@
   }
   }
 
+
+
+
+
+  /* this css for  Table Section  */
+
+
+  .hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}

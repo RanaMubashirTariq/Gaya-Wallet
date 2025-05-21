@@ -47,11 +47,14 @@ export default function HeaderTablesSwap() {
                 fontFamily: "Poppins",
                 border: "none",
                 whiteSpace: "nowrap",
-                backgroundColor: '#000000',
                 '@media (max-width:1050px)': {
                   fontSize: '12px',
                 },
-               
+                '@media (max-width:770px)': {
+                    fontSize: '12px',
+                     py:'2px',
+                     px:'10px',
+                 },
               }}
             >
               {head}

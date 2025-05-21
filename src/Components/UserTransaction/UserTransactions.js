@@ -26,7 +26,7 @@ export default function UserTranactions() {
                  <h2>User Transaction</h2>
              </div>
 
-             <Box className='table-main-container'>
+             <Box className='table-main-container-d'>
       {/* Header Row */}
       <Box className='table-upper-div'>
         <Box className='search-div'>

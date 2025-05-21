@@ -29,7 +29,7 @@ export default function BodyTable() {
         fontSize: "14px",
         fontWeight: 400,
         fontFamily: "Poppins",
-        // borderBottom:'3px'
+        borderBottom:'3px'
       };
 
 
@@ -47,17 +47,17 @@ export default function BodyTable() {
         <TableBody>
           {users.map((user) => (
             <TableRow key={user.id}>
-              <TableCell sx={{ ...cellStyle, width: `${cellWidths[0]}px` ,        '@media (max-width:765px)': {
-            fontSize: '12px',
+              <TableCell sx={{ ...cellStyle, width: `${cellWidths[0]}px` ,        '@media (max-width:770px)': {
+            fontSize: '12px', py:'2px', px:'10px',
           }, }}>{user.id}</TableCell>
-              <TableCell sx={{ ...cellStyle, width: `${cellWidths[1]}px` ,       '@media (max-width:765px)': {
-            fontSize: '12px',
+              <TableCell sx={{ ...cellStyle, width: `${cellWidths[1]}px` ,       '@media (max-width:770px)': {
+            fontSize: '12px',py:'2px', px:'10px',
           }, }}>{user.name}</TableCell>
-              <TableCell sx={{ ...cellStyle, width: `${cellWidths[2]}px`,        '@media (max-width:765px)': {
-            fontSize: '12px' ,
+              <TableCell sx={{ ...cellStyle, width: `${cellWidths[2]}px`,        '@media (max-width:770px)': {
+            fontSize: '12px' ,py:'2px', px:'10px',
           }, }}>{user.email}</TableCell>
-              <TableCell sx={{ ...cellStyle, width: `${cellWidths[3]}px` ,        '@media (max-width:7650px)': {
-            fontSize: '12px',
+              <TableCell sx={{ ...cellStyle, width: `${cellWidths[3]}px` ,        '@media (max-width:770px)': {
+            fontSize: '12px',py:'2px', px:'10px',
           },}}>
                 <Box sx={{ display: "flex", alignItems: "center" }}>
                   {user.wallet}
@@ -72,14 +72,14 @@ export default function BodyTable() {
                   </Tooltip>
                 </Box>
               </TableCell>
-              <TableCell sx={{ ...cellStyle, width: `${cellWidths[4]}px` ,       '@media (max-width:765px)': {
-            fontSize: '12px',
+              <TableCell sx={{ ...cellStyle, width: `${cellWidths[4]}px` ,       '@media (max-width:770px)': {
+            fontSize: '12px', py:'2px', px:'10px',
           }, }}>{user.insured}</TableCell>
-              <TableCell sx={{ ...cellStyle, width: `${cellWidths[5]}px` ,        '@media (max-width:765px)': {
-            fontSize: '12px',
+          <TableCell sx={{ ...cellStyle, width: `${cellWidths[5]}px` ,        '@media (max-width:770px)': {
+            fontSize: '12px', py:'2px', px:'10px',
           }, }}>{user.subscription}</TableCell>
-              <TableCell sx={{ ...cellStyle, width: `${cellWidths[6]}px`  ,        '@media (max-width:765px)': {
-            fontSize: '12px',
+          <TableCell sx={{ ...cellStyle, width: `${cellWidths[6]}px`  ,        '@media (max-width:770px)': {
+            fontSize: '12px', py:'2px', px:'10px',
           },}}>{user.insuranceFee}</TableCell>
             </TableRow>
           ))}

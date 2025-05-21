@@ -16,6 +16,7 @@ export default function FooterTable() {
         fontSize: "14px",
         fontWeight: 400,
         fontFamily: "Poppins",
+         borderBottom: "none",
       };
 
   return (
@@ -30,16 +31,16 @@ export default function FooterTable() {
     <Table>
     <TableFooter>
   <TableRow>
-    <TableCell sx={{ width: "70px" }} />
-    <TableCell sx={{ width: "130px" }} />
-    <TableCell sx={{ width: "220px" }} />
-    <TableCell sx={{ width: "210px" }} />
-    <TableCell sx={{ ...cellStyle, width: "160px" ,  background: 'rgba(255, 255, 255, 0.05)',       '@media (max-width:765px)': {
-            fontSize: '12px',
+    <TableCell sx={{ width: "70px"  ,  borderBottom: "none",}} />
+    <TableCell sx={{ width: "130px" ,  borderBottom: "none", }} />
+    <TableCell sx={{ width: "220px" ,  borderBottom: "none", }} />
+    <TableCell sx={{ width: "210px" ,  borderBottom: "none", }} />
+    <TableCell sx={{ ...cellStyle, width: "160px" ,   borderBottom: "none",  background: 'rgba(255, 255, 255, 0.05)',        '@media (max-width:770px)': {
+            fontSize: '12px', py:'0px', px:'10px',
           }, }}>$35,000</TableCell>
-    <TableCell sx={{ width: "130px" }} />
-    <TableCell sx={{ ...cellStyle, width: "140px" ,        '@media (max-width:765px)': {
-            fontSize: '12px',
+    <TableCell sx={{ width: "130px" , borderBottom: "none", }} />
+    <TableCell sx={{ ...cellStyle, width: "140px" ,  borderBottom: "none",        '@media (max-width:770px)': {
+            fontSize: '12px', py:'0px', px:'10px',
           }, }}>$35,000</TableCell>
   </TableRow>
 </TableFooter>

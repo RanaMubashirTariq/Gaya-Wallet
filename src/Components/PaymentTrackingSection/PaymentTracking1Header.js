@@ -42,17 +42,21 @@ export default function PaymentTracking1Header() {
               key={idx}
               sx={{
                 width: `${headerWidths[idx]}px`,
+                background: 'rgba(255, 255, 255, 0.05)',
                 color: "rgba(143, 162, 183, 1)",
                 fontSize: "14px",
                 fontWeight: 500,
                 fontFamily: "Poppins",
                 border: "none",
                 whiteSpace: "nowrap",
-                backgroundColor: '#000000',
                 '@media (max-width:1050px)': {
                   fontSize: '12px',
                 },
-               
+                '@media (max-width:770px)': {
+                    fontSize: '12px',
+                     py:'2px',
+                     px:'10px',
+                 },
               }}
             >
               {head}
