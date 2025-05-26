@@ -7,7 +7,7 @@ export default function NoUserTransaction() {
     <div className='no-user-main-container'> 
      <div className='second-circle-shadow-4'></div>
 
-<div className='header-div-user'>
+<div className='header-div'>
                          <h2>User Transaction</h2>
                   </div>
 

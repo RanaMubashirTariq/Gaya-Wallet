@@ -6,7 +6,7 @@ import './CompleteSwapNumber.css'
 export default function CompleteSwapNumber() {
   return (
     <div className='swap-main-container'>
-                    <div className='header-div-user'>
+                    <div className='header-div'>
                          <h2>User Transaction</h2>
                   </div>
 

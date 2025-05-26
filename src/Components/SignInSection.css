@@ -94,7 +94,10 @@
     border: 1px solid rgba(255, 255, 255, 0.02);
     backdrop-filter: blur(70px);
     margin: 0;
-    color: white;
+     color: rgba(106, 132, 160, 1);
+} 
+.input-section-div input::placeholder{
+       color: rgba(106, 132, 160, 1);
 } 
 .icon-d{
     position: relative;
@@ -115,7 +118,7 @@
 .icon-d .fa-solid{
     width: 20px;
     height: 20px;
-    color: white
+     color: rgba(106, 132, 160, 1);
 }
 .sign-in-btn{
     outline: none;
@@ -177,7 +180,7 @@
         padding: 0px 25px;
     }
     .sign-in-inner-div{
-        gap: 10px;
+        gap: 20px;
     }
     .first-circle-shadow{
         position: absolute;

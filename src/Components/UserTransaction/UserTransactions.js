@@ -22,7 +22,7 @@ export default function UserTranactions() {
 
   return (
     <div className='main-data-section'>
-             <div className='header-div-user'>
+             <div className='header-div'>
                  <h2>User Transaction</h2>
              </div>
 
@@ -36,7 +36,7 @@ export default function UserTranactions() {
             placeholder="Search User by name, email, or wallet address"
             InputProps={{
               disableUnderline: true,
-              style: { color:' rgba(143, 162, 183, 1)'},
+              style: { color:' rgba(143, 162, 183, 1)' , padding:'3px'},
             }}
             // sx={{ ml: 1 }}
           />

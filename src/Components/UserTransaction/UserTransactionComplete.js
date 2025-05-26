@@ -6,7 +6,7 @@ import UserTransactionTable2 from './UserTransactionTable2'
 export default function UserTransactionComplete() {
   return (
         <div className='swap-main-container'>
-                        <div className='header-div-user'>
+                        <div className='header-div'>
                              <h2>User Transaction</h2>
                       </div>
                       <div className='swap-main-bottom-div'>

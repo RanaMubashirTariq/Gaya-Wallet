@@ -22,7 +22,7 @@ export default function InsuredUser() {
 
   return (
     <div className='main-data-section'>
-             <div className='header-div-user'>
+             <div className='header-div'>
                  <h2>Insured Users</h2>
              </div>
 

@@ -146,5 +146,10 @@
     background-color: white;
     border-radius: 5px;
   }
+      .hamburger {
+      display: flex;
+      z-index: 1002;
+      margin: 20px 20px 0px 0px;
+    }
   }
   

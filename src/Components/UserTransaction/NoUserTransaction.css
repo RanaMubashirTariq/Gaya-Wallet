@@ -9,13 +9,13 @@
    left: 50%;
    transform: translate(-50% , -50%);
 }
-.inner-no-user-div{
+.header-div-user{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
-.inner-no-user-div h2{
+.header-div-user h2{
     font-family: Poppins;
     font-weight: 500;
     font-size: 30px;
@@ -44,8 +44,8 @@
   }
   
   @media screen and (max-width:670px) {
-    .inner-no-user-div h2{
-        font-size: 22px;
+    .header-div-user h2{
+        font-size: 20px;
     }
     .no-user-main-container{
           overflow: hidden;

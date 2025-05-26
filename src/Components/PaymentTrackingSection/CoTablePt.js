@@ -15,7 +15,7 @@ export default function CoTablePt() {
   return (
                    <div className='complete-table-div'>  
    
-                   <Button  onClick={() => setOpen(true)}  variant="contained"  startIcon={<FilterAltIcon />}  className='filter-btn'>
+                   <Button  onClick={() => setOpen(true)}  variant="contained"  startIcon={<FilterAltIcon />}  className='filter-btn-2'>
                      Filter
                    </Button>
    

@@ -86,16 +86,19 @@
     color: rgba(255, 255, 255, 1);
   }
 
+  .filter-btn-2{
+    background:linear-gradient(91.26deg, #1201FF 0%, #C597FD 100%);
+    border-radius: 20px !important;
+    text-transform: none;  
+}
+.filter-btn-2:hover{
+   opacity:0.4;
+}
 
 
 
 @media screen and (max-width:1300px) {
     .header-div-payment-tracking{
-        /* width: 100%;
-        display: flex;
-        align-items: center;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        padding: 35px 0px 0px 70px; */
          position: fixed;
         top: 0;
         left: 0;
@@ -106,10 +109,10 @@
         backdrop-filter: blur(10px); /* Optional if using blur effect */
     }
     .complete-table-div{
-        padding-top: 100px;
+        margin-top: 140px;
     }
     .pyment-tracking-div{
-        padding-top: 100px;
+        margin-top: 140px;
     }
 }
 
@@ -120,6 +123,18 @@
             gap: 50px;
             padding: 0px 25px 0px 25px;
         }
+            .header-div-payment-tracking h2{
+           font-size: 20px !important;
+      }
+          .header-div-payment-tracking{
+        padding: 35px 25px 0px 50px;
+    }
+        .complete-table-div{
+        margin-top: 100px;
+    }
+        .pyment-tracking-div{
+        margin-top: 100px;
+    }
     }
 
 @media screen and (max-width:480px) {
@@ -127,13 +142,4 @@
         width: 180px;
         height: 180px;
       }
-    .no-paymnet-div h2{
-        font-size: 22px;
-      }
-}
-
-    @media screen and (max-width:370px) {
-        .header-div-payment-tracking h2{
-            font-size: 20px;
-        }
 }

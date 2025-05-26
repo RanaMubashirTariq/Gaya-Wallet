@@ -74,13 +74,12 @@
   
   .input-group-container {
     display: flex;
-    flex-wrap: wrap;
     gap: 12px;
   }
   
   .input-box {
-    flex: 1;
-    padding: 10px 12px;
+    width: 100%;
+    padding: 10px 20px;
     background-color: #1a1a28;
     border: none;
     border-radius: 10px;
@@ -125,6 +124,10 @@
   
   /* Responsive font on small screens */
   @media (max-width: 765px) {
+    .popup-overlay {
+    height: 400px;
+    padding: 0px;
+  }
     .popup-container {
       width: 90%;
     }
@@ -138,9 +141,7 @@
     .action-buttons {
       display: flex;
       justify-content: space-between;
-      flex-direction: column;
       gap: 14px;
-      margin-top: 15px;
     }
   }
   
