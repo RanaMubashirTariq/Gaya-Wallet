@@ -36,11 +36,11 @@ export default function FooterTable() {
     <TableCell sx={{ width: "220px" ,  borderBottom: "none", }} />
     <TableCell sx={{ width: "210px" ,  borderBottom: "none", }} />
     <TableCell sx={{ ...cellStyle, width: "160px" ,   borderBottom: "none",  '@media (max-width:770px)': {
-            fontSize: '12px', py:'0px', px:'10px',
+            fontSize: '12px', py:'3px', px:'10px',
           }, }}>$35,000</TableCell>
     <TableCell sx={{ width: "130px" , borderBottom: "none", }} />
     <TableCell sx={{ ...cellStyle, width: "140px" ,  borderBottom: "none",        '@media (max-width:770px)': {
-            fontSize: '12px', py:'0px', px:'10px',
+            fontSize: '12px', py:'3px', px:'10px',
           }, }}>$35,000</TableCell>
   </TableRow>
 </TableFooter>

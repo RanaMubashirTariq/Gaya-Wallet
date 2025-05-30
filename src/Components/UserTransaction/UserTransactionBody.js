@@ -60,14 +60,14 @@ export default function UserTransactionBody() {
           {users.map((user, index) => (
             <TableRow key={index}>
               <TableCell sx={{ ...cellStyle, width: `${cellWidths[0]}px` , '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  }, }}>{user.id}</TableCell>
               
               <TableCell
                 sx={{
                   ...cellStyle,
                   width: `${cellWidths[1]}px`, '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  },
                 }}
               >
@@ -76,28 +76,28 @@ export default function UserTransactionBody() {
 
 
               <TableCell sx={{ ...cellStyle, width: `${cellWidths[2]}px` , '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  }, }}>{user.outputToken}</TableCell>
 
 
 
 
               <TableCell sx={{   ...cellStyle,   width: `${cellWidths[3]}px`, '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  }, }} > {user.inputAmount} </TableCell>
               <TableCell sx={{   ...cellStyle,   width: `${cellWidths[4]}px`, '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  },  }} > {user.outputAmount} </TableCell>
               <TableCell sx={{   ...cellStyle,   width: `${cellWidths[5]}px`, '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  }, }} > {user.exchange} </TableCell>
 
 
               <TableCell sx={{ ...cellStyle, width: `${cellWidths[6]}px` , '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  },}}>
                 <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' , '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  }, }}>
                   {user.hash}
                   <Tooltip title="Copy Transaction Hash">
@@ -112,7 +112,7 @@ export default function UserTransactionBody() {
               </TableCell>
 
               <TableCell sx={{ ...cellStyle, width: `${cellWidths[7]}px` ,  whiteSpace:'nowrap' , '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  }, }} >{user.date}</TableCell>
             </TableRow>
           ))}

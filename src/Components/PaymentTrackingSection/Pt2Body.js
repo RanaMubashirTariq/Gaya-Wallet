@@ -56,20 +56,20 @@ export default function Pt2Body() {
           {users.map((user) => (
             <TableRow key={user.id}>
               <TableCell sx={{ ...cellStyle, width: `${cellWidths[0]}px` ,     '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  }, }}>{user.id}</TableCell>
               <TableCell sx={{ ...cellStyle, width: `${cellWidths[1]}px` , color:'green' ,        '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  }, }}>{user.name}</TableCell>
               <TableCell sx={{ ...cellStyle, width: `${cellWidths[2]}px`,         '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  }, }}>{user.subcription}</TableCell>
               <TableCell sx={{ ...cellStyle, width: `${cellWidths[3]}px` ,      '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  }, }}>{user.amount}</TableCell>
                  
 <TableCell sx={{ ...cellStyle, width: `${cellWidths[4]}px` ,        '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  },}}>
                 <Box sx={{ display: "flex", alignItems: "center" }}>
                   {user.wallet}
@@ -86,12 +86,12 @@ export default function Pt2Body() {
               </TableCell>
 
               <TableCell sx={{ ...cellStyle, width: `${cellWidths[5]}px` ,         '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  }, }}>{user.datetime}</TableCell>
 
 
                            <TableCell sx={{ ...cellStyle, width: `${cellWidths[6]}px` , '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px', 
+                    fontSize: '12px', py:'4px',  px:'10px', 
                  },  }}>
                               {/* You can replace this with your platform loader icon */}
                                   <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -101,7 +101,7 @@ export default function Pt2Body() {
 
 
          <TableCell sx={{ ...cellStyle, width: `${cellWidths[7]}px` ,   '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  },}}>{user.expiryDate}</TableCell>
             </TableRow>
           ))}

@@ -52,7 +52,7 @@ export default function HeaderTablesSwap() {
                 },
                 '@media (max-width:770px)': {
                     fontSize: '12px',
-                     py:'2px',
+                     py:'4px',
                      px:'10px',
                  },
               }}

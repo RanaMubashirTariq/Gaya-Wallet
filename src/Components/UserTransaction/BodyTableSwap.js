@@ -59,7 +59,7 @@ export default function BodyTableSwap() {
           {users.map((user, index) => (
             <TableRow key={index}>
               <TableCell sx={{ ...cellStyle, width: `${cellWidths[0]}px` , '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  },  }}>{user.id}</TableCell>
               
               <TableCell
@@ -68,7 +68,7 @@ export default function BodyTableSwap() {
                   width: `${cellWidths[1]}px`,
                   color: user.category.includes('Send') ? '#FF4D4D' : '#00FF00',
                   '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  },
                 }}
               >
@@ -77,22 +77,22 @@ export default function BodyTableSwap() {
 
 
               <TableCell sx={{ ...cellStyle, width: `${cellWidths[2]}px` , '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  },}}>{user.token}</TableCell>
 
 
 
 
               <TableCell sx={{   ...cellStyle,   width: `${cellWidths[3]}px`, '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  }, }} > {user.amount} </TableCell>
 
 
               <TableCell sx={{ ...cellStyle, width: `${cellWidths[4]}px` , '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  }, }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center'  , '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  },}}>
                   {user.hash}
                   <Tooltip title="Copy Transaction Hash">
@@ -107,15 +107,15 @@ export default function BodyTableSwap() {
               </TableCell>
 
               <TableCell sx={{ ...cellStyle, width: `${cellWidths[5]}px` , '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  }, }}>{user.date}</TableCell>
 
               <TableCell sx={{ ...cellStyle, width: `${cellWidths[6]}px` , '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  }, }}>
                 {/* You can replace this with your platform loader icon */}
                 <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' , '@media (max-width:770px)': {
-                    fontSize: '12px', py:'2px',  px:'10px',
+                    fontSize: '12px', py:'4px',  px:'10px',
                  }, }}>
                   <img
                     src="/Pictures/gaya.svg"
