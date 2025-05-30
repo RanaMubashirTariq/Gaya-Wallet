@@ -186,16 +186,15 @@
     padding: 13.5px 16px;
 } 
 .second-circle-shadow-2{
-    position: absolute;
-    width: 589px;
-    height: 589px;
-    bottom: -180px;
-     left: 748px; 
+        width: 589px;
+        height: 589px;
+        bottom: -177px;
+        left: 748px;
   }  
   
   .second-circle-shadow-2 img{
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
   }
 }
 
@@ -242,7 +241,7 @@
 }
 
 
-          /* @media screen and (max-width:1100px) {
+          @media screen and (max-width:1100px) {
          .second-circle-shadow-2{
             position:fixed;
             width: 589px;
@@ -301,6 +300,16 @@
             width: 389px;
             height: 389px;
             bottom: -100px;
+            left: 100px;
+  }
+    }
+
+            @media screen and (max-width:330px) {
+         .second-circle-shadow-2{
+            position:fixed;
+            width: 389px;
+            height: 389px;
+            bottom: -100px;
             left: 50px;
   }
-    } */
+    }

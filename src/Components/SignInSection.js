@@ -30,7 +30,7 @@ export default function SignInSection() {
               <div className='sign-in-inner-div'>
 
              <div className='first-circle-shadow'></div>
-             <div className='second-circle-shadow'><img src="/Pictures/vector.svg"/></div>
+             <div className='second-circle-shadow-2'><img src="/Pictures/vector.svg"/></div>
            
              <img src="/Pictures/GayaWallet-logo.svg" className='logo-img'/>
         
