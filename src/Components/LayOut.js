@@ -8,9 +8,9 @@ import { Outlet } from 'react-router-dom';
 export default function LayOut() {
   return (
     <div className="main-1">
-      <div className="second-circle-shadow">
-        {/* <img src="/Pictures/vector.svg" alt="background" /> */}
-      </div>
+       
+          <div className='first-circle-shadow'></div>
+          <div className='second-circle-shadow'><img src="/Pictures/vector.svg"/></div>
       <SideNav />
       <Outlet />
     </div>

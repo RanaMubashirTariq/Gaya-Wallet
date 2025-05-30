@@ -24,7 +24,7 @@ export default function CardsSection() {
   return (
 
        <div className='Data-main-div'>
-         <div className="second-circle-shadow-3"></div>
+         {/* <div className="second-circle-shadow-3"></div> */}
 
         {/*  Partv 1 */}
  

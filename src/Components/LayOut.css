@@ -1,99 +1,105 @@
 .main-1{
     max-width: 100%;
       display: flex;
-      overflow-y: hidden;
+      overflow: hidden;
       position: relative;
   }
   .second-circle-shadow{
-      position: absolute;
+      position:fixed;
       width: 689px;
       height: 689px;
-      top: 718px;
-      right: 40px;
+      bottom: -100px;
+      left: 848px;
       border-radius: 50%;
-      background: url(/public/Pictures/vector.svg) ,  linear-gradient(92.24deg, #1201FF 0%, #C597FD 120.64%);
+      background: url(/public/Pictures/color-1.svg);
       background-repeat: none;
       background-position: center;
       background-size: cover;
-      filter: blur(100px);
-      opacity: 0.4;
-      /* z-index: 0; */
-      /* overflow: hidden; */
-    }
+  }
     
     .second-circle-shadow img{
-      width: 413px;
-      height: 413px;
-      z-index: 1;
-      color: rgba(255, 255, 255, 0.03);
+      width: 313px;
+      height: 313px;
+    position: absolute;
+     top: 50%;
+    left: 50%;
+    transform:translate(-50% , -50%);
     }
-  
-  
-    .second-circle-shadow-3{
-      position: absolute;
-      width: 600px;
-      height: 600px;
-      top: 718px;
-      right: 40px;
-      border-radius: 50%;
-      background: linear-gradient(92.24deg, #1201FF 0%, #C597FD 120.64%);
-      filter: blur(100px);
-      opacity: 0.4;
-      z-index: 0;
-      overflow: hidden;
-    }
+
+     @media screen and (max-width:1300px) {
+         .second-circle-shadow{
+            position:fixed;
+            width: 589px;
+            height: 589px;
+            bottom: -130px;
+            left: 748px;
+  }
     
     .second-circle-shadow img{
-      width: 413px;
-      height: 413px;
-      z-index: 1;
-      color: rgba(255, 255, 255, 0.03);
+      width: 250px;
+      height: 250px;
     }
+     }
+
+          @media screen and (max-width:1100px) {
+         .second-circle-shadow{
+            position:fixed;
+            width: 589px;
+            height: 589px;
+            bottom: -150px;
+            left: 570px;
+  }
+     }
+
+
+     
+          @media screen and (max-width:920px) {
+         .second-circle-shadow{
+            position:fixed;
+            width: 589px;
+            height: 589px;
+            bottom: -150px;
+            left: 400px;
+  }
+     }
 
 
 
-    .second-circle-shadow-4{
-      position: absolute;
-      width: 400px;
-      height: 489px;
-      top: 418px;
-      right: 40px;
-      border-radius: 50%;
-      background: linear-gradient(92.24deg, #1201FF 0%, #C597FD 120.64%);
-      filter: blur(100px);
-      opacity: 0.4;
-      z-index: 0;
-      overflow: hidden;
+               @media screen and (max-width:770px) {
+         .second-circle-shadow{
+            position:fixed;
+            width: 489px;
+            height: 489px;
+            bottom: -150px;
+            left: 390px;
+  }
+       .second-circle-shadow img{
+      width: 200px;
+      height: 200px;
     }
-    
-    .second-circle-shadow-4 img{
-      width: 413px;
-      height: 413px;
-      z-index: 1;
-      color: rgba(255, 255, 255, 0.03);
-    }
+     }
 
 
 
     @media screen and (max-width:550px) {
-      .second-circle-shadow{
-        position: absolute;
-        width: 489px;
-        height: 489px;
-        top: 350px;
-        right: 40px;
-        border-radius: 50%;
-        background: linear-gradient(92.24deg, #1201FF 0%, #C597FD 120.64%);
-        filter: blur(100px);
-        opacity: 0.4;
-        z-index: 0;
-        overflow: hidden;
-      }
-      
-      .second-circle-shadow img{
-        width: 313px;
-        height: 313px;
-        z-index: 1;
-        color: rgba(255, 255, 255, 0.03);
-      }
+         .second-circle-shadow{
+            position:fixed;
+            width: 389px;
+            height: 389px;
+            bottom: -100px;
+            left: 150px;
+  }
+       .second-circle-shadow img{
+      width: 150px;
+      height: 150px;
+    }
+    }
+        @media screen and (max-width:420px) {
+         .second-circle-shadow{
+            position:fixed;
+            width: 389px;
+            height: 389px;
+            bottom: -100px;
+            left: 50px;
+  }
     }

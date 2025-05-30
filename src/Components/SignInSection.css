@@ -1,4 +1,5 @@
 .sign-in-container {
+    width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -6,7 +7,7 @@
     flex-direction: column;
     padding: 0 20px;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .sign-in-inner-div{
     width: 100%;
@@ -31,23 +32,49 @@
     position: absolute;
     width: 689px;
     height: 689px;
-    top: 518px;
-    right: 40px;
+    bottom: -177px;
+    left: 848px;
+    /* right: -20px; */
     border-radius: 50%;
-    background: linear-gradient(92.24deg, #1201FF 0%, #C597FD 120.64%);
-    filter: blur(100px);
-    opacity: 0.4;
-    z-index: 0;
+    background:url(/public/Pictures/color-1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .second-circle-shadow-2 img{
-    width: 413px;
-    height: 413px;
-    z-index: 1;
-    color: rgba(255, 255, 255, 0.03);
+    position: absolute;
+     top: 50%;
+    left: 50%;
+    transform:translate(-50% , -50%);
+    width: 313px;
+    height: 313px;
+  }
+  .second-circle-shadow-2{
+    position: absolute;
+    width: 689px;
+    height: 689px;
+    bottom: -177px;
+    left: 848px;
+    border-radius: 50%;
+    background:url(/public/Pictures/color-1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .second-circle-shadow-2 img{
+    position: absolute;
+     top: 50%;
+    left: 50%;
+    transform:translate(-50% , -50%);
+    width: 313px;
+    height: 313px;
+    /* filter: blur(20px);
+    opacity: 0.3; */
   }
 .logo-img{
-    width: 277px;
+    width: 257px;
 }
 .sign-in-box{
     width: 100%;
@@ -92,8 +119,6 @@
     outline: none;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.02);
-    backdrop-filter: blur(70px);
-    margin: 0;
      color: rgba(106, 132, 160, 1);
 } 
 .input-section-div input::placeholder{
@@ -144,37 +169,37 @@
 
 
 @media screen and (max-width:1340px) {
+    /* .logo-img{
+    width: 230px;
+} */
     .sign-in-container {
         padding: 0 60px;
     }
     .sign-in-inner-div{
     gap: 20px;
 }
+.sign-in-box{
+    gap: 20px;
+    padding: 40px 0px;
+}
+.input-section-div input{
+    padding: 13.5px 16px;
+} 
+.second-circle-shadow-2{
+    position: absolute;
+    width: 589px;
+    height: 589px;
+    bottom: -180px;
+     left: 748px; 
+  }  
+  
+  .second-circle-shadow-2 img{
+    width: 200px;
+    height: 200px;
+  }
 }
 
 
-@media screen and (max-width:960px) {
-    .sign-in-container{
-        padding: 50px 150px 50px 150px;
-        overflow: hidden;
-    }
-    .first-circle-shadow{
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        filter: blur(60px);
-        opacity: 0.4;
-    }
-    .second-circle-shadow-2{
-        position: absolute;
-        width: 250px;
-        height: 250px;
-        top: 313px;
-        right: 0px;
-        filter: blur(60px);
-        opacity: 0.4;
-      }
-}
 @media screen and (max-width:660px) {
     .sign-in-container{
         padding: 0px 25px;
@@ -189,15 +214,6 @@
         filter: blur(20px);
         opacity: 0.4;
     }
-    .second-circle-shadow-2{
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        top: 400px;
-        right: -50px;
-        filter: blur(40px);
-        opacity: 0.4;
-      }
       .logo-img{
         width: 200px;
     }
@@ -224,3 +240,67 @@
         font-size: 12px;
     }
 }
+
+
+          /* @media screen and (max-width:1100px) {
+         .second-circle-shadow-2{
+            position:fixed;
+            width: 589px;
+            height: 589px;
+            bottom: -150px;
+            left: 570px;
+  }
+     }
+
+
+     
+          @media screen and (max-width:920px) {
+         .second-circle-shadow-2{
+            position:fixed;
+            width: 589px;
+            height: 589px;
+            bottom: -150px;
+            left: 400px;
+  }
+     }
+
+
+
+               @media screen and (max-width:770px) {
+         .second-circle-shadow-2{
+            position:fixed;
+            width: 489px;
+            height: 489px;
+            bottom: -150px;
+            left: 390px;
+  }
+       .second-circle-shadow-2 img{
+      width: 200px;
+      height: 200px;
+    }
+     }
+
+
+
+    @media screen and (max-width:550px) {
+         .second-circle-shadow-2{
+            position:fixed;
+            width: 389px;
+            height: 389px;
+            bottom: -100px;
+            left: 150px;
+  }
+       .second-circle-shadow-2 img{
+      width: 150px;
+      height: 150px;
+    }
+    }
+        @media screen and (max-width:420px) {
+         .second-circle-shadow-2{
+            position:fixed;
+            width: 389px;
+            height: 389px;
+            bottom: -100px;
+            left: 50px;
+  }
+    } */

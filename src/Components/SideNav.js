@@ -46,24 +46,44 @@ export default function SideNav() {
 
         <div className="side-nav-menu">
 <ul>
-  <li>
-    <NavLink to="/dashboard" end className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-      <img src='/Pictures/Dashboard.svg' />Dashboard
-    </NavLink>
-  </li>
+<li>
+  <NavLink to="/dashboard" end   className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+    {({ isActive }) => (
+      <>
+        <img   src={isActive ? '/Pictures/Dasboard-1.svg' : '/Pictures/Dashboard.svg'}   alt="Dashboard Icon"   />
+               Dashboard
+      </>
+      )}
+  </NavLink>
+</li>
   <li>
     <NavLink to="/dashboard/insured-users" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-      <img src='/Pictures/Insured.svg' />Insured User
+          {({ isActive }) => (
+      <>
+        <img   src={isActive ? '/Pictures/insured-1.svg' : '/Pictures/insured.svg'}   alt="insured Icon"   />
+               Insured User
+      </>
+      )}
     </NavLink>
   </li>
   <li>
     <NavLink to="/dashboard/userTransactions" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-      <img src='/Pictures/UserTransaction.svg' />User Transactions
+          {({ isActive }) => (
+      <>
+        <img   src={isActive ? '/Pictures/user-transaction-1.svg' : '/Pictures/UserTransaction.svg'}   alt="UserTransaction Icon"   />
+             User Transactions
+      </>
+      )}
     </NavLink>
   </li>
   <li>
     <NavLink to="/dashboard/payment-tracking" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-      <img src='/Pictures/Insurance.svg' />Insurance Payments
+          {({ isActive }) => (
+      <>
+        <img   src={isActive ? '/Pictures/Insurance-3.svg' : '/Pictures/Insurance.svg'}   alt="Insurance Icon"   />
+              Insurance Payments
+      </>
+      )}
     </NavLink>
   </li>
 </ul>
