@@ -7,7 +7,7 @@
     flex-direction: column;
     padding: 0 20px;
     position: relative;
-    /* overflow: hidden; */
+    overflow-y: hidden;
 }
 .sign-in-inner-div{
     width: 100%;
