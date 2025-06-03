@@ -161,7 +161,6 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    pointer-events: none;
 }
 .sign-in-btn a{
     text-decoration: none;
