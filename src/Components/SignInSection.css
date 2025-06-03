@@ -7,7 +7,7 @@
     flex-direction: column;
     padding: 0 20px;
     position: relative;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 .sign-in-inner-div{
     width: 100%;
@@ -198,57 +198,59 @@
   }
 }
 
-
-@media screen and (max-width:660px) {
+@media screen and (max-width: 660px) {
   .sign-in-container {
-    height: 100vh; /* Fill viewport */
-    overflow: hidden; /* Prevent scroll */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     padding: 0 25px;
+    position: relative;
   }
 
   .sign-in-inner-div {
-    height: 100%;
-    justify-content: center; /* Vertically center */
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical centering */
+    align-items: center;
+    height: 100%; /* fill parent */
+    gap: 20px;
   }
 
   .sign-in-box {
-    max-height: 90vh; /* Ensure it's not overflowing */
-    overflow-y: auto; /* Scroll only if absolutely necessary */
+    width: 100%;
+    gap: 20px;
+    padding: 20px 0px;
+    max-height: 90vh;
+    overflow-y: auto; /* only if needed */
   }
 
-    .first-circle-shadow{
-        position: absolute;
-        width: 100px !important;
-        height: 100px !important;
-        filter: blur(50px);
-        opacity: 0.4;
-    }
-      .logo-img{
-        width: 200px;
-    }
-      .sign-in-box{
-        width: 100%;
-        gap: 20px;
-        padding: 20px 0px;
-    }
-    .sign-in-box p{
-        font-size: 24px;
-    }
-    .input-section-div{
-        padding: 0px 25px;
-    }
-    .input-section-div label{
-        font-size: 12px;
-    }
-    .input-section-div input{
-        padding: 13.5px 7px;
-    } 
-    .sign-in-btn{
-        margin: 25px 25px;
-        padding: 12px;
-        font-size: 12px;
-    }
+  .sign-in-box p {
+    font-size: 24px;
+  }
+
+  .input-section-div {
+    padding: 0px 25px;
+  }
+
+  .input-section-div label {
+    font-size: 12px;
+  }
+
+  .input-section-div input {
+    padding: 13.5px 7px;
+  }
+
+  .sign-in-btn {
+    margin: 25px 25px;
+    padding: 12px;
+    font-size: 12px;
+  }
 }
+
 
 
           @media screen and (max-width:1100px) {
@@ -297,14 +299,14 @@
             width: 389px;
             height: 389px;
             bottom: -100px;
-            left: 150px;
+            left: 160px;
   }
        .second-circle-shadow-2 img{
       width: 150px;
       height: 150px;
     }
     }
-        @media screen and (max-width:420px) {
+        @media screen and (max-width:430px) {
          .second-circle-shadow-2{
             position:fixed;
             width: 389px;
