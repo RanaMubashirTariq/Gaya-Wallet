@@ -139,7 +139,10 @@
 
 @media screen and (max-width:480px) {
     .img-div-payment{        
-        width: 180px;
+        width: 180px !important;
         height: 180px;
       }
+  .no-paymnet-div h2{
+        font-size: 20px;
+  }
 }
