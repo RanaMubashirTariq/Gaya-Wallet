@@ -225,7 +225,7 @@
     gap: 20px;
     padding: 20px 0px;
     max-height: 90vh;
-    overflow-y: auto; /* only if needed */
+    overflow-y: auto;
   }
 
   .sign-in-box p {
