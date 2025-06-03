@@ -100,10 +100,10 @@
             width: 389px;
             height: 389px;
             bottom: -100px;
-            left: 130px;
+            left: 110px;
   }
     }
-            @media screen and (max-width:420px) {
+            @media screen and (max-width:370px) {
          .second-circle-shadow{
             position:fixed;
             width: 389px;
