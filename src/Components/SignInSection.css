@@ -312,7 +312,7 @@
     }
         @media screen and (max-width:430px) {
          .second-circle-shadow-2{
-            position:fixed;
+            position:absolute;
             width: 389px;
             height: 389px;
             bottom: -100px;
@@ -322,7 +322,7 @@
 
             @media screen and (max-width:350px) {
          .second-circle-shadow-2{
-            position:fixed;
+            position:absolute;
             width: 389px;
             height: 389px;
             bottom: -100px;
