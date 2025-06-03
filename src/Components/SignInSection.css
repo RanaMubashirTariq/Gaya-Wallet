@@ -221,9 +221,9 @@
   }
   .first-circle-shadow{
     position: fixed;
-    width: 113px;
-    height: 113px;
-    top: 0;
+    width: 213px !important;
+    height: 213px;
+    top: 100px;
     left: -1px;
 }
   .sign-in-box {
