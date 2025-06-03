@@ -219,13 +219,17 @@
     height: 100%; /* fill parent */
     gap: 20px;
   }
-
+  .first-circle-shadow{
+    position: fixed;
+    width: 113px;
+    height: 113px;
+    top: 0;
+    left: -1px;
+}
   .sign-in-box {
     width: 100%;
     gap: 20px;
     padding: 20px 0px;
-    max-height: 90vh;
-    overflow-y: auto;
   }
 
   .sign-in-box p {

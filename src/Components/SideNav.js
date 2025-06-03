@@ -41,7 +41,7 @@ export default function SideNav() {
       {/* Sidebar */}
       <div  ref={sidebarRef}  className={`side-nav-container ${isOpen ? 'open' : ''}`} >
         <div className="first-circle-shadow"></div>
-
+        
         <img src="/Pictures/GayaWallet-logo.svg" className="side-nav-logo" alt="Logo" />
 
         <div className="side-nav-menu">
@@ -89,12 +89,12 @@ export default function SideNav() {
 </ul>
 
         </div>
+           </div>
 
         <div className="side-nav-logout-d">
           <img src="Line.svg" className="line-div" alt="Line" />
           <Link to="/"><img src='/Pictures/Arrow-right.svg'/>Log Out</Link>
         </div>
-      </div>
     </>
   );
 }

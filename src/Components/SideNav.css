@@ -136,10 +136,13 @@
 
   @media screen and (max-width:770px) {
     .side-nav-logout-d{
-      padding: 220px 23px 30px 24px;
+      padding: 300px 23px 30px 24px;
   }
   }
   @media screen and (max-width:765px) {
+        .side-nav-logout-d{
+      padding: 220px 23px 30px 24px;
+  }
   .hamburger .bar {
     width: 18px;
     height: 2px;
